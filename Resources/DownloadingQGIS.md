@@ -17,7 +17,7 @@ Once the download has completed open the QGIS-2.8.4-1.dmg installer. You will se
  (/Images/InstallMac05.png)
  >NOTE: if you have very strict firewall setting enabled you might be presented with this following message: 
   ! [img]
- (/Images/InstallMac02.png)
+ (Resoures/Images/InstallMac02.png)
  >If you are then open your System Preferences and select Security and Privacy
   ! [img]
  (/Images/InstallMac03.png)
