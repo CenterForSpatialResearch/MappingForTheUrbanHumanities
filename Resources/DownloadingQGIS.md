@@ -1,12 +1,14 @@
-###Downloading QGIS
+##Downloading QGIS
 
 The tutorials for this course are written for QGIS 2.8 (Wein), thus its best that you download this version of the program. 
 
+###Instructions for PC Users
 PC users can download QGIS here and follow the instructions provided by the installer:
 
 * for 32 bit: [QGIS 2.8](http://qgis.org/downloads/QGIS-OSGeo4W-2.8.9-1-Setup-x86.exe)
 * for 64 bit: [QGIS 2.8](http://qgis.org/downloads/QGIS-OSGeo4W-2.8.9-1-Setup-x86_64.exe)
 
+###Instructions for Mac Users
 Mac users must install several packages which support QGIS: GDAL, NumPy, matplotlib, and then QGIS. To avoid any confusion we have included instructions here. 
 
 Download this installer: [QGIS 2.8 for Mac](http://www.kyngchaos.com/files/software/qgis/QGIS-2.8.4-1.dmg)
@@ -15,22 +17,15 @@ Once the download has completed open the QGIS-2.8.4-1.dmg installer. You will se
  ![img]
  (https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac01-a.png)
 
- You'll notice that the four installer packages included are numbered for the order in which you need to install them. First select GDAL Complete (circled above). 
-
- The following installer window will open. Follow the steps and agree to the terms as prompted. 
-  ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac05.png)
+ You'll notice that the four installer packages included are numbered for the order in which you need to install them. First select GDAL Complete (circled above). An installer window will open, follow the steps and agree to the terms as prompted. 
  
-Next install NumPy. Click on the circled icon and again follow the instructions in the installer. 
+Next install NumPy. Click on the circled icon and again follow the instructions in the installer. Once the NumPy installation is complete do the same with matplotlib, and finally with QGIS. 
 
- ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac01-b.png)
-
- Once the NumPy installation is complete do the same with matplotlib, and finally with QGIS. 
-
- Once installation is complete QGIS will be in your Applications folder and is now ready to use. 
+Once installation is complete QGIS will be in your Applications folder and is now ready to use. 
 
  ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac11.png)
 
- >NOTE: if you have very strict firewall setting enabled you might be presented with this following message: 
+ ##NOTE: if you have very strict firewall setting enabled you might be presented with this following message: 
 
   ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac01-a.png)
 
