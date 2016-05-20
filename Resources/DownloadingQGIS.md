@@ -3,10 +3,11 @@
 The tutorials for this course are written for QGIS 2.8 (Wein), thus its best that you download this version of the program. 
 
 PC users can download QGIS here and follow the instructions provided by the installer:
-for 32 bit: [QGIS 2.8](http://qgis.org/downloads/QGIS-OSGeo4W-2.8.9-1-Setup-x86.exe)
-for 64 bit: [QGIS 2.8](http://qgis.org/downloads/QGIS-OSGeo4W-2.8.9-1-Setup-x86_64.exe)
 
-Mac users must install several packages which support QGIS: GDAL, NumPy, matplotlib, and then QGIS. TO avoid any confusion we have included instructions here. 
+*for 32 bit: [QGIS 2.8](http://qgis.org/downloads/QGIS-OSGeo4W-2.8.9-1-Setup-x86.exe)
+*for 64 bit: [QGIS 2.8](http://qgis.org/downloads/QGIS-OSGeo4W-2.8.9-1-Setup-x86_64.exe)
+
+Mac users must install several packages which support QGIS: GDAL, NumPy, matplotlib, and then QGIS. To avoid any confusion we have included instructions here. 
 
 Download this installer: [QGIS 2.8 for Mac](http://www.kyngchaos.com/files/software/qgis/QGIS-2.8.4-1.dmg)
 
