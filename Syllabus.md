@@ -132,10 +132,10 @@ Raster Classification
 **Thursday, June 2 | Analyzing Data 03**
 Studio@Butler
 
-**Topics**	Density Maps,
+* **Topics**	Density Maps,
 			Raster-based Decision Mapping
 						
-**Tutorial:**Analyzing Data 03: Concentrations of Libraries and Education 
+* **Tutorial:**Analyzing Data 03: Concentrations of Libraries and Education 
 	* *NYC Branch Libraries*
 	* *NYC Board of Education Elementary School Locations*
 
@@ -149,29 +149,29 @@ Studio@Butler
 **Monday, June 6 | Spatial Methods in Interdisciplinary Seminars**
 300 S Buell Hall
 
-1:00-2:30pm Spatial Pedagogies: a conversation with Laura Kurgan, Director CSR, Juan Francisco Saldarriaga, Associate Research Scholar, CSR and Leah Meisterlin, Assistant Professor of Urban Planning GSAPP
-•	Conflict Urbanism: Aleppo
-•	Mapping for Architecture Urbanism and the Humanities
-•	Datascapes and the Informal City
+* 1:00-2:30pm Spatial Pedagogies: a conversation with Laura Kurgan, Director CSR, Juan Francisco Saldarriaga, Associate Research Scholar, CSR and Leah Meisterlin, Assistant Professor of Urban Planning GSAPP
+	* Conflict Urbanism: Aleppo
+	* Mapping for Architecture Urbanism and the Humanities
+	* Datascapes and the Informal City
 
 **Tuesday, June 7 | Syllabus Development & Practicum**
 Studio@Butler
 	
-Curriculum Development Sessions by Appointment
+* Curriculum Development Sessions by Appointment
 
 **Wednesday, June 8 | Syllabus Development & Practicum**
 Studio@Butler
 
-Curriculum Development Sessions by Appointment
+* Curriculum Development Sessions by Appointment
 
 **Thursday, June 9 | Syllabus Development & Practicum**
 Studio@Butler
 
-Curriculum Development Sessions by Appointment
+* Curriculum Development Sessions by Appointment
 
 **Friday, June 10 | Syllabus Development & Practicum**
 300 S Buell Hall
 	
-Debrief and discussion of course outcomes with Laura Kurgan, Director CSR, and Sharon Marcus, Dean of Humanities and Orlando Harriman Professor of English and Comparative Literature.	
+* Debrief and discussion of course outcomes with Laura Kurgan, Director CSR, and Sharon Marcus, Dean of Humanities and Orlando Harriman Professor of English and Comparative Literature.	
 
 
