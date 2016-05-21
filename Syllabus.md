@@ -80,19 +80,21 @@ Studio@Butler
 	* Georeferencing, 
 	* Digitizing 	
 						
-* Tutorial: Making Data 01: Working with Historical Maps
-	* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
+* Tutorial: 
+	* Making Data 01: Working with Historical Maps
+		* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
 
 
 **Friday, May 27 | Making Data 02**
 300 S Buell Hall
 * Topics: Digitizing, Geocoding	
 						
-* Tutorial: Making Data 01 (con’t): Working with Historical Maps
+* Tutorial: 
+	* Making Data 01 (con’t): Working with Historical Maps
 			* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
 
-			Making Data 02: Geocoding Music 
-			Reference USA Database of Music Related Businesses c. 2015
+	* Making Data 02: Geocoding Music 
+			* *Reference USA Database of Music Related Businesses c. 2015*
 				
 
 Monday, May 30 | No Workshop, Memorial Day
