@@ -25,8 +25,9 @@ Once installation is complete QGIS will be in your Applications folder and is no
 
 ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac11.png)
 
-###NOTE: if you have very strict firewall settings enabled you might be presented with this following message: 
-  ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac01-a.png)
+###NOTE: 
+If you have very strict firewall settings enabled you might be presented with this following message: 
+  ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac02.png)
 
  If you are then open your System Preferences and select Security and Privacy
 
