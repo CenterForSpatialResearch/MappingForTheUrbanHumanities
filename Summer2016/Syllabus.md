@@ -1,7 +1,10 @@
 ##Mapping for the Urban Humanities
 >Center for Spatial Research | Summer 2016
+
 >Dare Brawley, Eric Glass, Leah Meisterlin 
+
 >May 23, 2016 – June 10, 2016 | 1:00-5:30 pm 
+
 >Studio@Butler & 300 S Buell Hall
 
 ###Description
@@ -28,10 +31,10 @@ The course aims to equip faculty with a grasp of the methods and methodologies o
 * Adapt course tutorials for use in their own classes 
 * Develop data-driven urban humanities courses and assignments 
 
-###Materials and format 
-Laptop with qGIS 2.8 installed 
-All course tutorials will be provided and available via Github
-Optional: a 16 GB flash drive to store course data + exercises
+###Materials 
+* Laptop with qGIS 2.8 installed 
+* All course tutorials will be provided and available via Github
+* Optional: a 16 GB flash drive to store course data + exercises
 
 ##Background on CSR 
 The Center for Spatial Research was established in 2015 as a hub for urban research that links design, architecture, urbanism, the humanities and data science. It sponsors research and curricular activities built around new technologies of mapping, data visualization, data collection, and data analysis. CSR focuses on data literacy as well as interrogating the world of 'big data,' working to open up new areas of research and inquiry with advanced design tools to help scholars, students as well as our collaborators and audiences, to understand cities worldwide – past present and future.
@@ -48,13 +51,11 @@ We highly recommend that you read the following three essays/chapters during the
 * Urban Theory Lab. “Envisioning an Urbanized Planet—Materials” in Implosions/Explosions. Edited by Neil Brenner. Berlin: JOVIS, 2014. 
 
 ###Schedule and Topics
-Monday, May 23 | Introduction 
-Studio@Butler
-Topics			Introductions
-What is GIS?
-Course overview: Mapping, Making, Analyzing
+**Monday, May 23 | Introduction**
 
-Tutorial		Mapping Data 00: Adding Layers to a Map
+Studio@Butler
+* Topics: Introductions, What is GIS?, Course overview: Mapping, Making, Analyzing
+* Tutorial: Mapping Data 00: Adding Layers to a Map
 
 
 
