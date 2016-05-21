@@ -1,12 +1,16 @@
 ##Downloading QGIS
 
-The tutorials for this course are written for QGIS 2.8 (Wein), thus its best that you download this version of the program. 
+The tutorials for *Mapping for the Urban Humanities* are written for QGIS version 2.8 (Wein), thus its best that you download this version of the program. 
 
 ###Instructions for PC Users
 PC users can download QGIS here and follow the instructions provided by the installer:
 
 * for 32 bit: [QGIS 2.8](http://qgis.org/downloads/QGIS-OSGeo4W-2.8.9-1-Setup-x86.exe)
 * for 64 bit: [QGIS 2.8](http://qgis.org/downloads/QGIS-OSGeo4W-2.8.9-1-Setup-x86_64.exe)
+
+(To ditermine whether you are running a 64-bit or Windows look under Start Menu > Control Panel > System)
+
+Follow the prompts on the installer and keep all default settings. 
 
 ###Instructions for Mac Users
 Mac users must install several packages which support QGIS: GDAL, NumPy, matplotlib, and then QGIS. To avoid any confusion we have included instructions here. 
