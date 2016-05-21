@@ -52,7 +52,6 @@ We highly recommend that you read the following three essays/chapters during the
 
 ###Schedule and Topics
 **Monday, May 23 | Introduction**
-
 Studio@Butler
 * Topics: Introductions, What is GIS?, Course overview: Mapping, Making, Analyzing
 * Tutorial: Mapping Data 00: Adding Layers to a Map
