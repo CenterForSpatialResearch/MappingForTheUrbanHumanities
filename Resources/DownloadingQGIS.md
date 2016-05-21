@@ -11,17 +11,19 @@ PC users can download QGIS here and follow the instructions provided by the inst
 ###Instructions for Mac Users
 Mac users must install several packages which support QGIS: GDAL, NumPy, matplotlib, and then QGIS. To avoid any confusion we have included instructions here. 
 
-Download this installer: [QGIS 2.8 for Mac](http://www.kyngchaos.com/files/software/qgis/QGIS-2.8.4-1.dmg)
+1. Download this installer: [QGIS 2.8 for Mac](http://www.kyngchaos.com/files/software/qgis/QGIS-2.8.4-1.dmg)
 
-Once the download has completed open the QGIS-2.8.4-1.dmg installer. You will see the following: 
+2. Once the download has completed open the QGIS-2.8.4-1.dmg installer. You will see the following: 
  ![img]
  (https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac01-a.png)
 
- You'll notice that the four installer packages included are numbered for the order in which you need to install them. First select GDAL Complete (circled above). An installer window will open, follow the steps and agree to the terms as prompted. 
- 
-Next install NumPy. Click on the circled icon and again follow the instructions in the installer. Once the NumPy installation is complete do the same with matplotlib, and finally with QGIS. 
+ You'll notice that the four installer packages included are numbered for the order in which you need to install them. 
 
-Once installation is complete QGIS will be in your Applications folder and is now ready to use. 
+3. First select GDAL Complete (circled above). An installer window will open, follow the steps and agree to the terms as prompted. 
+ 
+4. Next install NumPy. Click on the circled icon and again follow the instructions in the installer. Once the NumPy installation is complete do the same with matplotlib, and finally with QGIS. 
+
+5. Once installation is complete QGIS will be in your Applications folder and is now ready to use. 
 
 ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac11.png)
 
