@@ -56,18 +56,13 @@ Studio@Butler
 * Topics: Introductions, What is GIS?, Course overview: Mapping, Making, Analyzing
 * Tutorial: Mapping Data 00: Adding Layers to a Map
 
-
-
-Tuesday, May 24 | Mapping Data 01      	
+**Tuesday, May 24 | Mapping Data 01**      	
 Studio@Butler
 
-Topics			GIS Data Types: Vector & Raster; Quantitative & Qualitative 
-Fundamentals of Cartography 
-Symbology, Classification			
-						
-Tutorial		Mapping Data 01: Mapping World Populations
-			Population by Country
-			CEISEN Gridded Population of the World
+* Topics: GIS Data Types: Vector & Raster; Quantitative & Qualitative, Fundamentals of Cartography, Symbology, Classification			
+* Tutorial: Mapping Data 01: Mapping World Populations
+			*Population by Country*
+			*CEISEN Gridded Population of the World*
 			
 
 Wednesday, May 25 | Mapping Data 02
