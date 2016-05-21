@@ -91,16 +91,17 @@ Studio@Butler
 						
 * Tutorial: 
 	* Making Data 01 (con’t): Working with Historical Maps
-			* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
+		* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
 
 	* Making Data 02: Geocoding Music 
+
 			* *Reference USA Database of Music Related Businesses c. 2015*
 				
 
-Monday, May 30 | No Workshop, Memorial Day
+**Monday, May 30 | No Workshop, Memorial Day**
 
 
-Tuesday, May 31 | Analyzing Data 01
+**Tuesday, May 31 | Analyzing Data 01**
 Studio@Butler
 
 Topics			Introduction to Geoprocessing 
@@ -114,7 +115,7 @@ American Community Survey Language Spoken by Census Tract
 			NYC Board of Education Elementary School Locations
 
 
-Wednesday, June 1 | Analyzing Data 02 
+**Wednesday, June 1 | Analyzing Data 02**
 Studio@Butler
 
 Topics			Creative Geoprocessing | Proportional Split Estimation
@@ -131,7 +132,7 @@ Land Use Land Cover Classifications
 Metropolitan Statistical Areas, Combined Statistical Areas, Urban Areas
 
 
-Thursday, June 2 | Analyzing Data 03 
+**Thursday, June 2 | Analyzing Data 03**
 Studio@Butler
 
 Topics			Density Maps
@@ -142,13 +143,13 @@ NYC Branch Libraries
 				NYC Board of Education Elementary School Locations
 
 
-Friday, June 3 | Bringing it all Together
+**Friday, June 3 | Bringing it all Together**
 300 S Buell Hall
 	
 	Designing Methodologies and Assignments 
 
 
-Monday, June 6 | Spatial Methods in Interdisciplinary Seminars 
+**Monday, June 6 | Spatial Methods in Interdisciplinary Seminars**
 300 S Buell Hall
 
 1:00-2:30pm Spatial Pedagogies: a conversation with Laura Kurgan, Director CSR, Juan Francisco Saldarriaga, Associate Research Scholar, CSR and Leah Meisterlin, Assistant Professor of Urban Planning GSAPP
@@ -156,154 +157,22 @@ Monday, June 6 | Spatial Methods in Interdisciplinary Seminars
 •	Mapping for Architecture Urbanism and the Humanities
 •	Datascapes and the Informal City
 
-Tuesday, June 7 | Syllabus Development & Practicum
+**Tuesday, June 7 | Syllabus Development & Practicum**
 Studio@Butler
 	
 Curriculum Development Sessions by Appointment
 
-Wednesday, June 8 | Syllabus Development & Practicum
+**Wednesday, June 8 | Syllabus Development & Practicum**
 Studio@Butler
 
 Curriculum Development Sessions by Appointment
 
-Thursday, June 9 | Syllabus Development & Practicum
+**Thursday, June 9 | Syllabus Development & Practicum**
 Studio@Butler
 
 Curriculum Development Sessions by Appointment
 
-Friday, June 10 | Syllabus Development & Practicum
-300 S Buell Hall
-	
-Debrief and discussion of course outcomes with Laura Kurgan, Director CSR, and Sharon Marcus, Dean of Humanities and Orlando Harriman Professor of English and Comparative Literature.	
-Monday, May 23 | Introduction 
-Studio@Butler
-Topics			Introductions
-What is GIS?
-Course overview: Mapping, Making, Analyzing
-
-Tutorial		Mapping Data 00: Adding Layers to a Map
-
-
-
-Tuesday, May 24 | Mapping Data 01      	
-Studio@Butler
-
-Topics			GIS Data Types: Vector & Raster; Quantitative & Qualitative 
-Fundamentals of Cartography 
-Symbology, Classification			
-						
-Tutorial		Mapping Data 01: Mapping World Populations
-			Population by Country
-			CEISEN Gridded Population of the World
-			
-
-Wednesday, May 25 | Mapping Data 02
-Studio@Butler
-
-Topics			Coordinate Reference Systems & Projection 	
-						
-Tutorial		Mapping Data 02: Map Projections & Population Density
-			U.S. Population by County 1850, 1870 Historical Census
-			U.S. Rail Lines 1850, 1870
-
-
-Thursday, May 26 | Making Data 01
-300 S Buell Hall
-Topics			Where GIS Data Comes From 
-Georeferencing
-			Digitizing 	
-						
-Tutorial		Making Data 01: Working with Historical Maps
-East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”
-
-
-Friday, May 27 | Making Data 02
-300 S Buell Hall
-Topics			Digitizing 
-			Geocoding	
-						
-Tutorial		Making Data 01 (con’t): Working with Historical Maps
-			Digitizing the East Bronx c. 1902
-
-			Making Data 02: Geocoding Music 
-			Reference USA Database of Music Related Businesses c. 2015
-				
-
-Monday, May 30 | No Workshop, Memorial Day
-
-
-Tuesday, May 31 | Analyzing Data 01
-Studio@Butler
-
-Topics			Introduction to Geoprocessing 
-			Vector Geoprocessing Operations
-Spatial Joins	
-Working with Census Data
-						
-Tutorial		Analyzing Data 01: Libraries, Education, and Language
-NYC Branch Libraries 
-American Community Survey Language Spoken by Census Tract 
-			NYC Board of Education Elementary School Locations
-
-
-Wednesday, June 1 | Analyzing Data 02 
-Studio@Butler
-
-Topics			Creative Geoprocessing | Proportional Split Estimation
-			Raster Operations
-Raster Classification 
-						
-Tutorial		Analyzing Data 01 (con’t): Libraries and Education 
-NYC Branch Libraries 
-American Community Survey Language Spoken by Census Tract 
-			NYC Board of Education Elementary School Locations
-
-Analyzing Data 02: Mapping New York City’s Boundary(s) 
-Land Use Land Cover Classifications
-Metropolitan Statistical Areas, Combined Statistical Areas, Urban Areas
-
-
-Thursday, June 2 | Analyzing Data 03 
-Studio@Butler
-
-Topics			Density Maps
-			Raster-based Decision Mapping
-						
-Tutorial		Analyzing Data 03: Concentrations of Libraries and Education 
-NYC Branch Libraries 
-				NYC Board of Education Elementary School Locations
-
-
-Friday, June 3 | Bringing it all Together
-300 S Buell Hall
-	
-	Designing Methodologies and Assignments 
-
-
-Monday, June 6 | Spatial Methods in Interdisciplinary Seminars 
-300 S Buell Hall
-
-1:00-2:30pm Spatial Pedagogies: a conversation with Laura Kurgan, Director CSR, Juan Francisco Saldarriaga, Associate Research Scholar, CSR and Leah Meisterlin, Assistant Professor of Urban Planning GSAPP
-•	Conflict Urbanism: Aleppo
-•	Mapping for Architecture Urbanism and the Humanities
-•	Datascapes and the Informal City
-
-Tuesday, June 7 | Syllabus Development & Practicum
-Studio@Butler
-	
-Curriculum Development Sessions by Appointment
-
-Wednesday, June 8 | Syllabus Development & Practicum
-Studio@Butler
-
-Curriculum Development Sessions by Appointment
-
-Thursday, June 9 | Syllabus Development & Practicum
-Studio@Butler
-
-Curriculum Development Sessions by Appointment
-
-Friday, June 10 | Syllabus Development & Practicum
+**Friday, June 10 | Syllabus Development & Practicum**
 300 S Buell Hall
 	
 Debrief and discussion of course outcomes with Laura Kurgan, Director CSR, and Sharon Marcus, Dean of Humanities and Orlando Harriman Professor of English and Comparative Literature.	
