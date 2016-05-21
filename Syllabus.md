@@ -53,49 +53,48 @@ We highly recommend that you read the following three essays/chapters during the
 ###Schedule and Topics
 **Monday, May 23 | Introduction**
 Studio@Butler
-* Topics: Introductions, What is GIS?, Course overview: Mapping, Making, Analyzing
-* Tutorial: Mapping Data 00: Adding Layers to a Map
+* **Topics:** Introductions, What is GIS?, Course overview: Mapping, Making, Analyzing
+* **Tutorial:** Mapping Data 00: Adding Layers to a Map
 
 **Tuesday, May 24 | Mapping Data 01**      	
 Studio@Butler
 
-* Topics: GIS Data Types: Vector & Raster; Quantitative & Qualitative, Fundamentals of Cartography, Symbology, Classification			
-* Tutorial: Mapping Data 01: Mapping World Populations
+* **Topics:** GIS Data Types: Vector & Raster; Quantitative & Qualitative, Fundamentals of Cartography, Symbology, Classification			
+* **Tutorial:** Mapping Data 01: Mapping World Populations
 	* *Population by Country*
 	* *CEISEN Gridded Population of the World*
 			
 
 **Wednesday, May 25 | Mapping Data 02**
 Studio@Butler
-* Topics: Coordinate Reference Systems & Projection 							
-* Tutorial: Mapping Data 02: Map Projections & Population Density
+* **Topics:** Coordinate Reference Systems & Projection 							
+* **Tutorial:** Mapping Data 02: Map Projections & Population Density
 	* *U.S. Population by County 1850, 1870 Historical Census*
 	* *U.S. Rail Lines 1850, 1870*
 
 
 **Thursday, May 26 | Making Data 01**
 300 S Buell Hall
-* Topics: 
+* **Topics:**
 	* Where GIS Data Comes From, 
 	* Georeferencing, 
 	* Digitizing 	
 						
-* Tutorial: 
+* **Tutorial:** 
 	* Making Data 01: Working with Historical Maps
 		* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
 
 
 **Friday, May 27 | Making Data 02**
 300 S Buell Hall
-* Topics: Digitizing, Geocoding	
+* **Topics:** Digitizing, Geocoding	
 						
-* Tutorial: 
+* **Tutorial:** 
 	* Making Data 01 (con’t): Working with Historical Maps
 		* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
 
 	* Making Data 02: Geocoding Music 
-
-			* *Reference USA Database of Music Related Businesses c. 2015*
+		* *Reference USA Database of Music Related Businesses c. 2015*
 				
 
 **Monday, May 30 | No Workshop, Memorial Day**
@@ -104,12 +103,12 @@ Studio@Butler
 **Tuesday, May 31 | Analyzing Data 01**
 Studio@Butler
 
-Topics			Introduction to Geoprocessing 
+**Topics**			Introduction to Geoprocessing 
 			Vector Geoprocessing Operations
 Spatial Joins	
 Working with Census Data
 						
-Tutorial		Analyzing Data 01: Libraries, Education, and Language
+**Tutorial:**		Analyzing Data 01: Libraries, Education, and Language
 NYC Branch Libraries 
 American Community Survey Language Spoken by Census Tract 
 			NYC Board of Education Elementary School Locations
@@ -118,11 +117,11 @@ American Community Survey Language Spoken by Census Tract
 **Wednesday, June 1 | Analyzing Data 02**
 Studio@Butler
 
-Topics			Creative Geoprocessing | Proportional Split Estimation
+**Topics**			Creative Geoprocessing | Proportional Split Estimation
 			Raster Operations
 Raster Classification 
 						
-Tutorial		Analyzing Data 01 (con’t): Libraries and Education 
+**Tutorial:**		Analyzing Data 01 (con’t): Libraries and Education 
 NYC Branch Libraries 
 American Community Survey Language Spoken by Census Tract 
 			NYC Board of Education Elementary School Locations
@@ -135,18 +134,18 @@ Metropolitan Statistical Areas, Combined Statistical Areas, Urban Areas
 **Thursday, June 2 | Analyzing Data 03**
 Studio@Butler
 
-Topics			Density Maps
+**Topics**			Density Maps
 			Raster-based Decision Mapping
 						
-Tutorial		Analyzing Data 03: Concentrations of Libraries and Education 
+**Tutorial:**		Analyzing Data 03: Concentrations of Libraries and Education 
 NYC Branch Libraries 
 				NYC Board of Education Elementary School Locations
 
 
 **Friday, June 3 | Bringing it all Together**
 300 S Buell Hall
-	
-	Designing Methodologies and Assignments 
+
+* Designing Methodologies and Assignments 
 
 
 **Monday, June 6 | Spatial Methods in Interdisciplinary Seminars**
