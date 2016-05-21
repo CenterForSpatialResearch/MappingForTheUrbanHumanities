@@ -31,7 +31,7 @@ Mac users must install several packages which support QGIS: GDAL, NumPy, matplot
 
 ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac11.png)
 
-###NOTE: 
+###Note for Mac Users: 
 If you have very strict firewall settings enabled you might be presented with this following message: 
   ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac02.png)
 
