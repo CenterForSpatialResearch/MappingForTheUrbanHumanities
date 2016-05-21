@@ -73,7 +73,7 @@ Studio@Butler
 	* *U.S. Rail Lines 1850, 1870*
 
 
-Thursday, May 26 | Making Data 01
+**Thursday, May 26 | Making Data 01**
 300 S Buell Hall
 * Topics: 
 	* Where GIS Data Comes From, 
