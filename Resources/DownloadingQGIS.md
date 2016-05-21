@@ -40,3 +40,4 @@ If you have very strict firewall settings enabled you might be presented with th
   ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac03.png)
 
  Within Security and Privacy select the General tab and instruct your machine to "Open Anyway." Note, if you recieved this security message you will have to do this same process for each of the four pieces of software we are installing. 
+ 	![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac07.png)
