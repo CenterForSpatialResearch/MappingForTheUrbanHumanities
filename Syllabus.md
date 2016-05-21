@@ -75,10 +75,7 @@ Studio@Butler
 
 **Thursday, May 26 | Making Data 01**
 300 S Buell Hall
-* **Topics:**
-	* Where GIS Data Comes From, 
-	* Georeferencing, 
-	* Digitizing 	
+* **Topics:** Where GIS Data Comes From, Georeferencing, Digitizing 	
 						
 * **Tutorial:** 
 	* Making Data 01: Working with Historical Maps
@@ -89,7 +86,7 @@ Studio@Butler
 300 S Buell Hall
 * **Topics:** Digitizing, Geocoding	
 						
-* **Tutorial:** 
+* **Tutorials:** 
 	* Making Data 01 (con’t): Working with Historical Maps
 		* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
 
@@ -103,43 +100,44 @@ Studio@Butler
 **Tuesday, May 31 | Analyzing Data 01**
 Studio@Butler
 
-**Topics**			Introduction to Geoprocessing 
-			Vector Geoprocessing Operations
-Spatial Joins	
+* **Topics**			Introduction to Geoprocessing, 
+			Vector Geoprocessing Operations,
+Spatial Joins,	
 Working with Census Data
 						
-**Tutorial:**		Analyzing Data 01: Libraries, Education, and Language
-NYC Branch Libraries 
-American Community Survey Language Spoken by Census Tract 
-			NYC Board of Education Elementary School Locations
+* **Tutorial:**		Analyzing Data 01: Libraries, Education, and Language
+	* *NYC Branch Libraries*
+	* *American Community Survey Language Spoken by Census Tract* 
+	* *NYC Board of Education Elementary School Locations*
 
 
 **Wednesday, June 1 | Analyzing Data 02**
 Studio@Butler
 
-**Topics**			Creative Geoprocessing | Proportional Split Estimation
-			Raster Operations
-Raster Classification 
+* **Topics**			Creative Geoprocessing | Proportional Split Estimation,
+			Raster Operations,
+Raster Classification
 						
-**Tutorial:**		Analyzing Data 01 (con’t): Libraries and Education 
-NYC Branch Libraries 
-American Community Survey Language Spoken by Census Tract 
-			NYC Board of Education Elementary School Locations
+* **Tutorials:**	
+	* Analyzing Data 01 (con’t): Libraries and Education 
+		* *NYC Branch Libraries*
+		* *American Community Survey Language Spoken by Census Tract*
+		* *NYC Board of Education Elementary School Locations*
 
-Analyzing Data 02: Mapping New York City’s Boundary(s) 
-Land Use Land Cover Classifications
-Metropolitan Statistical Areas, Combined Statistical Areas, Urban Areas
+	* Analyzing Data 02: Mapping New York City’s Boundary(s) 
+		* *Land Use Land Cover Classifications*
+		* *Metropolitan Statistical Areas, Combined Statistical Areas, Urban Areas*
 
 
 **Thursday, June 2 | Analyzing Data 03**
 Studio@Butler
 
-**Topics**			Density Maps
+**Topics**	Density Maps,
 			Raster-based Decision Mapping
 						
-**Tutorial:**		Analyzing Data 03: Concentrations of Libraries and Education 
-NYC Branch Libraries 
-				NYC Board of Education Elementary School Locations
+**Tutorial:**Analyzing Data 03: Concentrations of Libraries and Education 
+	* *NYC Branch Libraries*
+	* *NYC Board of Education Elementary School Locations*
 
 
 **Friday, June 3 | Bringing it all Together**
