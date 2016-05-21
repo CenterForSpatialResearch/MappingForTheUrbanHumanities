@@ -23,7 +23,7 @@ Mac users must install several packages which support QGIS: GDAL, NumPy, matplot
 
  You'll notice that the four installer packages included are numbered for the order in which you need to install them. 
 
-3. First select GDAL Complete (circled above). An installer window will open, follow the steps and agree to the terms as prompted. 
+3. First select GDAL Complete (circled above). An installer window will open, follow the steps and agree to the terms as prompted. (If you encounter any security messages see the notes section at the bottom of this page for instructions.)
  
 4. Next install NumPy. Click on the circled icon and again follow the instructions in the installer. Once the NumPy installation is complete do the same with matplotlib, and finally with QGIS. 
 
