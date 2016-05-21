@@ -61,37 +61,35 @@ Studio@Butler
 
 * Topics: GIS Data Types: Vector & Raster; Quantitative & Qualitative, Fundamentals of Cartography, Symbology, Classification			
 * Tutorial: Mapping Data 01: Mapping World Populations
-			*Population by Country*
-			*CEISEN Gridded Population of the World*
+	* *Population by Country*
+	* *CEISEN Gridded Population of the World*
 			
 
-Wednesday, May 25 | Mapping Data 02
+**Wednesday, May 25 | Mapping Data 02**
 Studio@Butler
-
-Topics			Coordinate Reference Systems & Projection 	
-						
-Tutorial		Mapping Data 02: Map Projections & Population Density
-			U.S. Population by County 1850, 1870 Historical Census
-			U.S. Rail Lines 1850, 1870
+* Topics: Coordinate Reference Systems & Projection 							
+* Tutorial: Mapping Data 02: Map Projections & Population Density
+	* *U.S. Population by County 1850, 1870 Historical Census*
+	* *U.S. Rail Lines 1850, 1870*
 
 
 Thursday, May 26 | Making Data 01
 300 S Buell Hall
-Topics			Where GIS Data Comes From 
-Georeferencing
-			Digitizing 	
+* Topics: 
+	* Where GIS Data Comes From, 
+	* Georeferencing, 
+	* Digitizing 	
 						
-Tutorial		Making Data 01: Working with Historical Maps
-East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”
+* Tutorial: Making Data 01: Working with Historical Maps
+	* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
 
 
-Friday, May 27 | Making Data 02
+**Friday, May 27 | Making Data 02**
 300 S Buell Hall
-Topics			Digitizing 
-			Geocoding	
+* Topics: Digitizing, Geocoding	
 						
-Tutorial		Making Data 01 (con’t): Working with Historical Maps
-			Digitizing the East Bronx c. 1902
+* Tutorial: Making Data 01 (con’t): Working with Historical Maps
+			* *East Bronx c. 1902: “Map or plan showing the system of streets, avenues, public squares and places, parks, bridges, etc. in that part of the borough of the Bronx, City of New York lying easterly of the Bronx River.”*
 
 			Making Data 02: Geocoding Music 
 			Reference USA Database of Music Related Businesses c. 2015
