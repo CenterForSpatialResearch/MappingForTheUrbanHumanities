@@ -200,6 +200,73 @@ To do this open the layer properties menu for the populated_places layer and nav
 
 Choose Graduated Symbols. Select pop_max as the column, and Natural Breaks (Jenks) as the mode. Click Classify and then click Apply. The populated places will now be colored according to their population. Now we’ll adjust them by size. 
 
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/21_Graduate.png)
+
+**Click** on the Advanced dropdown menu in the bottom right and navigate to the `Size scale field` option. Select `pop_max`. **Click** `Apply`. You’ll notice that the circles are huge and fill up the entire screen. Return to the `Size scale field` and now select `expression`. In the expression builder window that opens write the following `“pop_max” / 1000000`. Click `Okay` in the expression builder then click `Apply`. Click Okay to close the Properties window. 
+
+The outcome of your selections should look something like this:
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/22_Graduated2.png)
+
+*Choropleth*
+We will create a choropleth map for population by country, where each country will be colored according to its population size. 
+
+**Open** the properties for the admin_0_countriesUNPop layer and navigate to the Style tab. Select Graduated Symbols from the dropdown at the top left, and select Pop_2010 as the Column on which we will color the map. Then in order to change the color of the entire country polygon we will need to change the symbol from an outline to a filled polygon by clicking the Change button next to Symbol and selecting “simple fill.” Next we will break up our data into classes, or ranges of values, and classify the colors for our choropleth map according to these. 
+
+Change the mode to Natural Breaks (jenks), and the number of classes to 8. Then **Click** `Classify`. Your properties menu will now look like the one below. Click `Apply`. The country polygons will change on the map. 
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/22_Choropleth.png)
+
+*Raster Classified Color Ramp*
+Next we will symbolize our gridded population of the world layer. This layer is different from the ones we have been primarily working with thus far because it is a raster dataset. 
+
+As we discussed briefly in the lecture a raster is a data layer that is composed of a grid of cells, or pixels, of a specific size where each cell has a value that represents information. In our case each cell has a value for population. Unlike a vector data layer which has an attribute table and each point, line or polygon can have multiple values associated with it, a raster grid cell can only have one value. Examples of other types of raster datasets include, temperature gradients, satellite images, and scanned historical maps. 
+
+If it isn’t already check the box next to the gridded population layer, gpw-v4-population-count-2010, to make it visible if it is not the top layer drag it in the Layers menu so that it is the top visible layer. It will largely be black. Now open the properties menu for the gridded population layer. Navigate to the style tab. You’ll notice that this looks different than the style menu we have been working with for our vector layers. Instead of a symbol type we have an option for ‘Render type’ and many options for how to color the bands in our dataset. 
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/23_RasterSymbol.png)
+
+Here you will see that the default style is `Singleband gray`, which means that it's only symbolizing in grayscale based on one band (other raster datasets can be made up of multiple bands, some examples of these include satellite images and color historical maps). The color gradient is currently set as `Black to white` but that can be switched to `White to black`. 
+
+And it is symbolizing based on the minimum value, in this case '0' and on the maximum value, '422.56'. Now, that's not actually the maximum value of the raster dataset. If you look at the right-hand panel (`Load min/maxvalues` highlighted in blue), which is where the min and max values come from, you will notice that the min/max values are being calculated based on a `Cumulative count cut`, which is used to get rid of the outliers. The Cumulative count cut means that QGIS is only taking into account the values between 2% and 98%, in the default cases. You could change that and use the option Min / max to use the actual minimum and maximum values. If you choose this one, you have to click on the Load button to load the new values. Do this and click on `Apply` to see how the image changes. Now the minimum is still '0' but the maximum is '140853'. Because of this new maximum value, most of the image appears black.
+
+Now change the `Render type` to `Singleband pseudocolor` to get something similar to a symbology we would do for a vector file. On the right-hand panel you will see the `Mode of classification` (`Continuous` or `Equal Interval`) and below, again, the Load min/max values panel. Click on the `Classify` button to load the values and then hit `Apply` to see it on the map. Now you can see clearly the regions of the world with the highest population density. You can experiment with the style of your map by changing the colors used with the pulldown menu highlighted in blue.
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/24_Pseudo.png)
+
+####Designing a map
+In order to present these three types of population measures we will now compose a map layout and become familiar with the QGIS map composer. The map composer allows you to add a legend, north arrow and scale bar to the map as well as to export our work as a PDF. 
+
+Create a map composition where all three depictions of world populations are values. You can adjust the transparency of your data layers using the style menu. Experiment with changing the colors of the different layers to become more familiar with the style menus for raster and vector layers. 
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/26_LayerTransparency.png)
+
+Once you are pleased with your map composition we will create a new print composer. When prompted you can either name the print composer or not. 
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/25_PrintComposer.png)
+
+To add a new map to the composer select the add new map button. Then click once to begin to drag a rectangle over the area on the page that you would like the map to occupy and click again to stop. Whatever is showing in your QGIS map project window as you create this new map in the print composer is what will appear in the new map. 
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/27_PrintComp.png)
+
+Next we will add a legend. Select Add new legend, and again click to draw a rectangle where you would like to place the legend. An unformatted legend that matches the information from the Layers panel will appear. You can use the options in the Item Properties tab (circled in blue) to change which layers are represented in the legend and to change the labeling of the layers in the legend. Scroll within this tab to familiarize yourself with which properties about the legend you can change. 
+
+We will format the legend and change the titles of each dataset so they are more descriptive. To do this un-click “Auto update” to make changes, then change the layer names by clicking the “legend item properties” button circled in magenta. 
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/27_PrintComp1.png)
+
+Next we will add a scale bar. Click the add new scale bar button. Again you will be able to change the properties of the scale bar, including the style, number of segments and size. 
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/27_PrintComp2.png)
+
+Last we will add two text boxes, one with a title for the map and another with abbreviated citations for our data sources. Click the add new label button then use the Main properties field to add the text you want, and use the Font button to change the text size and font. 
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/27_PrintComp3.png)
+
+Finally use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG. 
+
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/
+\Mapping_WorldPopulation.png)
 
 
 
