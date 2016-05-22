@@ -1,3 +1,5 @@
+##Mapping Data 
+
 ###Mapping Data 01: Mapping World Population(s) to understand the difference between multiple methods of measuring world population 
 
 ####Premise
@@ -137,7 +139,8 @@ In the bottom left hand corner of your QGIS window you will see that five popula
 
 Now that we have these three different layers we can begin to create maps that highlight the differences between these different ways to measure population. We will compose a map that symbolizes each of our three data layers differently. We will use graduated symbols to express city population, a choropleth map for population by country and a classified color ramp for the gridded population. We will then go over cartographic conventions adding a legend and scale bar to the map and exporting as a PDF. 
 
-*Proportional  symbols*
+**Proportional  symbols**
+
 We will symbolize the cities layer with symbols that are sized proportionally to their population -- a city with a larger population will have a larger circle and visa versa. 
 To do this open the layer properties menu for the populated_places layer and navigate to the Style tab. 
 
@@ -151,7 +154,8 @@ The outcome of your selections should look something like this:
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/22_Graduated2.png)
 
-*Choropleth*
+**Choropleth**
+
 We will create a choropleth map for population by country, where each country will be colored according to its population size. 
 
 **Open** the properties for the admin_0_countriesUNPop layer and navigate to the Style tab. Select Graduated Symbols from the dropdown at the top left, and select Pop_2010 as the Column on which we will color the map. Then in order to change the color of the entire country polygon we will need to change the symbol from an outline to a filled polygon by clicking the Change button next to Symbol and selecting “simple fill.” Next we will break up our data into classes, or ranges of values, and classify the colors for our choropleth map according to these. 
@@ -160,7 +164,8 @@ Change the mode to Natural Breaks (jenks), and the number of classes to 8. Then 
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/22_Choropleth.png)
 
-*Raster Classified Color Ramp*
+**Raster Classified Color Ramp**
+
 Next we will symbolize our gridded population of the world layer. This layer is different from the ones we have been primarily working with thus far because it is a raster dataset. 
 
 As we discussed briefly in the lecture a raster is a data layer that is composed of a grid of cells, or pixels, of a specific size where each cell has a value that represents information. In our case each cell has a value for population. Unlike a vector data layer which has an attribute table and each point, line or polygon can have multiple values associated with it, a raster grid cell can only have one value. Examples of other types of raster datasets include, temperature gradients, satellite images, and scanned historical maps. 
