@@ -6,3 +6,4 @@ In this exercise, you will explore some of the georeferencing tools available in
 
 Open QGIS:
 
+![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef1.png)
