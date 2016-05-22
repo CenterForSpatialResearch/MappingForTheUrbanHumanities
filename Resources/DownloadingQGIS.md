@@ -13,13 +13,12 @@ PC users can download QGIS here and follow the instructions provided by the inst
 Follow the prompts on the installer and keep all default settings. 
 
 ###Instructions for Mac Users
-Mac users must install several packages which support QGIS: GDAL, NumPy, matplotlib, and then QGIS. To avoid any confusion we have included instructions here. 
+Mac users must install several packages which support QGIS: GDAL, NumPy, matplotlib, and then QGIS. To avoid any confusion we have included instructions here. (Mac users need to be running OS X 10.8 or higher to run QGIS). 
 
 1. Download this installer: [QGIS 2.8 for Mac](http://www.kyngchaos.com/files/software/qgis/QGIS-2.8.4-1.dmg)
 
 2. Once the download has completed, open the QGIS-2.8.4-1.dmg installer. You will see the following: 
- ![img]
- (https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac01-a.png)
+ ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac01-a.png)
 
  You'll notice that the four installer packages included are numbered for the order in which you need to install them. 
 
@@ -32,12 +31,12 @@ Mac users must install several packages which support QGIS: GDAL, NumPy, matplot
 ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac11.png)
 
 #####Note for Mac Users: 
-If you have very strict firewall settings enabled you might be presented with this following message: 
+If you have very strict security/firewall settings enabled you might be presented with this following message: 
   ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac02.png)
 
- If you recieve this security message then open your System Preferences and select Security and Privacy.
+ If you recieve this security message then you will need to authorize an exception to your firewall settings.You can do this by opening your System Preferences and selecting Security and Privacy:
 
   ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac03.png)
 
- Within Security and Privacy select the General tab and instruct your machine to "Open Anyway." Note, if you recieved this security message you will have to do this same process for each of the four pieces of software we are installing. 
+ Within Security and Privacy select the General tab and instruct your machine to "Open Anyway." Note, if you recieved this security message you will have to go through this same process for each of the four pieces of software we are installing. 
  	![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Images/InstallMac07.png)
