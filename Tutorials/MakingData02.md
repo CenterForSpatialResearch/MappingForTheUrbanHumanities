@@ -47,7 +47,7 @@ Next you will digitize some of the park pathways.  Create another new shapefile 
 
 ![DigitizingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/Digitize18.png)
 
-Now when you toggle on editing and select the add features tool ![DigitizingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/Digitize19.png) you will be digitizing line features.  As you click with the add features tool you can continue to add as many vertices to the line as you wish.  To complete the line segment, use the right mouse button. 
+Now when you toggle on editing and select the add features tool ![DigitizingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/Digitize19.png).  You will be digitizing line features.  As you click with the add features tool you can continue to add as many vertices to the line as you wish.  To complete the line segment, use the right mouse button. 
 
 Line features are more complex than the point features you made earlier and a few more considerations need to be made. One issue regards the shape of the streets and paths.  Since these streets are so detailed you have the option of actually digitizing the curbs or path outlines.  Instead, you are going to digitize the ‘centerline,’ using a single line feature to represent the center of the path feature.  
 
