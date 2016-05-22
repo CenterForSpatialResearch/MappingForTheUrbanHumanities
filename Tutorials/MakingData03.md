@@ -41,52 +41,93 @@ You are once again going to use OpenStreetMap as our reference data for the geoc
 The plugins dialog opens.  Search for “MMQGIS”, highlight it, and click “Install plugin”: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode12.png)
 
+It may take a few seconds to install.  
+
+You will also install the OpenLayers plugin.    OpenLayers will allow you to view and navigate through several different basemap services including OpenStreetMap, Google Maps, Bing Maps, and MapQuest. Find the OpenLayers plugin and install it in the same fashion:
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode13.png)
 
+Close the plugins menu when finished. 
+
+The OpenLayers tools should now appear under the Web menu.  Expand it and open the OpenStreetMap layer:
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode14.png)
 
-![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode15.png)
-
+Use the zoom tools ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode15.png)to zoom in to the Bronx area: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode16.png)
 
-![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode17.png)
+Now you are going to map the Bronx business locations you downloaded from ReferenceUSA.  First you will use the latitude and longitude coordinates that Reference USA provides. 
 
+In QGIS, add the table you downloaded by clicking on the “Add Delimited Text” tool ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode17.png). Navigate to your table.  Choose csv as file format, point coordinates as your geometry, and “longitude” and “latitude” as your X and Y fields (these may all be selected by default, as QGIS tries to guess the right entries, but make sure that the settings are correct).  Click OK: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode18.png)
 
+Choose WGS 84 as the coordinate system: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode19.png)
 
+Your locations should map on top of the Bronx: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode20.png)
 
+The points that you have displayed are being stored temporarily “on the fly” in computer memory.  If you are happy with the results, it is a good idea to save the data immediately in a spatial format.  An easy way to do this is to right-click on the MusicBusinessesBronx layer in the layers panel and clicking “Save as..”: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode21.png)
 
+Save the file as an ESRI Shapefile in your project directory with the name “MusicBusinessesXY”: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode22.png)
 
+The new layer should add to the map over the first.  Now you can turn off the first Business layer by unchecking it in the layers panel: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode23.png)
 
+Exactly how ReferenceUSA derives the coordinates for these businesses is something of a mystery; it isn’t described in the website or documentation.  Also, in other circumstances you won’t have coordinates for your locations.  Next, you will geocode the business locations using a street address locator.
+
+The QGIS address location tools are in the MMQGIS plugin you installed earlier. The MMQGIS tools should now appear under a new MMQGIS menu: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode24.png)
 
+MMQGIS provides a disparate set of tools, but you will only be using the ‘geocode’ toolset.  The geocode toolset presently includes two functions. “Geocode from street layer” allows you to build your own geocoding service based off of an addressable street layer database.  “Geocode CSV with Google/ Open Street Map” allows you to geocode a list of locations against the geocoding services available through either Google or OpenStreetMap (OSM).  For this exercise you will be use the OSM geocoder.  The OSM geocoding service, like all of the OSM data, is open source and transparent.  We know, for example, that OSM uses the LION street locations from the NYC Planning Department for its New York address locator, so you can expect very good results.
+
+Since ReferenceUSA provides address locations in a very clean, appropriately delimited format, this will be an easy process for you that won’t require any data cleaning.  Choose “geocode CSV with Google / OpenStreetMap” from the MMQGIS menu: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode25.png)
 
+Navigate to your business table and input “Address” as the address field, “City” as the city field, and “State” as the state field.  There is not an appropriate country field here, so leave that blank.   Choose OpenStreetMap as your web service.  Save the Output as “MusicBusinessesOSM” and save an output list as “NotFoundOSM” in your project directory. The not found output will create a table of any locations that cannot be located (there may not be any for this exercise). Click OK:
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode26.png)
 
+This may take a couple of minutes to run.  When it is finished the new layer should be added to the map (you may want to change the color or size of the locations in the layer properties if the two layers look too similar or small): 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode27.png)
 
+It is likely that the two business location layers will be significantly different.  In the example above, most of the locations seem to be offset by a few feet, but in other cases by quite a bit more.  
+
+In some cases, it is not clear if there what the corresponding location is between the two layers: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode28.png)
 
+You can measure how much discrepancy there is using QGIS tools. One option is to look for the nearest neighbor for each feature.  We can test this quickly by using the built in Distance Matrix tool:
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode29.png)
 
+Distance Matrix will take the points in one layer and find the closest point in another layer and return the distance between the two.  Open the tool and use MusicBusinessXY as the input and MusicBusinessesOSM as the target layer. Use the company name as the ID field and be sure to check “use only nearest target points.”  Save the output as DistanceMatrix. Click OK:
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode30.png)
 
+Navigate to the output table and open it: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode31.png)
 
+Note that the distance measurements are given in decimal degrees (because of the polar coordinate system that the data is currently on) so the distances themselves are not particularly meaningful.  What is important is to note that the distances vary quite a bit.  Furthermore, in many cases the nearest neighbor is not the same business!  In some cases this is because the locations in the area are significantly different.  In other cases it is because OSM was unable to find the business at all. 
+
+Open the NotFoundOSM table in your project directory.  In my example there were 31 addresses that were not found: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode32.png)
 
+This particular geocoding toolset does not give the user much control over the way in which the tools work.  Nor is there any indication of how “close” the locator was to finding a location or what the reason might be for not identifying a location.  Possibilities include bad zip codes, misspelled or alternative street names, confusing apartment numbers or post office boxes.  The OSM service seems to be somewhat conservative in its estimation of these locations.  If you like, you can investigate this table, edit it and geocode it again to see if the OSM geocoder might find the businesses.
+
+It might be interesting to try the Google geocoder and see if it has different results.  The Google geocoder includes a number of additional location services, although it is all proprietary and obscure – a “black box.”  Also, it is a proprietary service and Google only allows a small number of searches free of charge (approximately 2,000 or so a day) although this should not be a problem with your small dataset.  Run the geocoding tools as above only this time choose the Google Maps web service.  Save the output files as MusicBusinessesGoogle.shp and NotFoundGoogle.csv: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode33.png)
 
+Click OK, it may run for a couple of minutes.  The new layer should add to the map automatically: 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode34.png)
 
+You are likely to find that the locations are again very different!
+
+In most cases, the different locators will find very similar but different locations.  For these two businesses on Tremont Ave. the three locations are all approximately the same building:
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode35.png)
 
+In other cases the discrepancies are likely to be much larger.  Spend a few minutes comparing the three layers and how and where they differ.  One big difference you are likely to see between OSM and Google is in the number of results.  The Google geocoder is somewhat liberal in returning results.  Look in your NotFoundGoogle file and see if there are any unfound locations.
+
+In my example there were no unfound locations. Take a look at some of the locations that Google found that OSM did not. In my addresses there was a PO box number that OSM predictably did not find.  Google did, however:
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode36.png)
 
+I looked at this location on the map to see if it identified a post office.  It actually appears to be a co-op development over two miles from the post office:
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode37.png)
+
+Looking at the attribute table in the Google results, there is an “addrolocat” field which gives some indication of how Google identified the location.  In most cases this is indicated as “street_address” but there are other entries like “premise” and “subpremise.”  For the PO Box, the entry is “administrative_area_level_2” which is a bit mysterious.  On closer inspection, it does not even seem to be in the 10451 zip code.  After some investigation, this turns out to be the location that Google uses as “The Bronx,” it is apparently a centroid calculation for the entire county and a location that is used for locations that cannot be identified at a more granular level.
