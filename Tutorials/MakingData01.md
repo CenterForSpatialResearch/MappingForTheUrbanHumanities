@@ -10,8 +10,18 @@ Open QGIS:
 
 You are going to use OpenStreetMap (OSM) as reference data for the georeferencing process.  OSM provides a free, open-source map of the world from public domain and volunteered data.   You can view the OSM basemap service is QGIS through the OpenLayers plugin.  This plugin does not come pre-installed with QGIS, so you will probably need to add it.  Under the plugins menu, select “Manage and Install Plugins…” 
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef2.png)
+
 The plugins dialog will open.  Search for “Openlayers Plugin.”  Highlight it, and click “Install plugin”:
 
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef3.png)
+
 It may take a few seconds to install.  Close the plugins menu when finished.  The OpenLayers tools should now appear under the Web menu: 
+
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef4.png)
+
+This plugin will allow you to view a number of basemap services and steam them directly into your QGIS workspace.  Choose the OpenStreetMap>OpenStreetMap option.
+Since you are working in a new QGIS project, the map should show the entire earth as the default: 
+![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef5.png)
+Use the zoom in tool ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef6.png) and zoom into the Central Bronx in the area around The Botanical Garden:
+(https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef7.png)
+Now you will access the georeferencing tools and match the scanned map to the OSM map.  
