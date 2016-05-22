@@ -32,7 +32,19 @@ In order to construct our map within QGIS we will need to add our data layers to
 
 ![vector](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
 
-**Navigate** to the MappingData\Shape\ folder and add the populated_places.shp and admin_0_countries.shp files. Note you can select multiple shapefiles by holding down Command (on Mac) or Ctrl (on Windows) while individually clicking the file names. 
+**Navigate** to the MappingData\Shape\ folder. You'll notice a number of different file extensions that are likely unfamiliar. The files outlined in blue are all components of the admin_0_countries shapefile, and the ones outlined in magenta are all elements of the populated_places shapefile. It is very important that all of these files stay together in the same folder otherwise QGIS will not be able to load the layer.
+
+* .shp - The main file that stores the feature geometry (required).
+* .shx - The index file that stores the index of the feature geometry (required).
+* .dbf - The dBASE table that stores the attribute information of features (required).
+* .sbn and .sbx - The files that store the spatial index of features (these might get corrupted, see note at the end of this tutorial).
+* .prj - The file that stores the coordinate system information.
+* For more information on these extensions and others see [this explanation by ESRI](http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?TopicName=Shapefile_file_extensions).
+
+![vector](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_ElementsofSHP.png)
+
+Add the `populated_places.shp` and `admin_0_countries.shp` files. Even though we will just be adding these files to the map QGIS still references the other files associated with each layer (.shx,.dbf,.sbn,.prj). 
+Note you can select multiple shapefiles by holding down Command (on Mac) or Ctrl (on Windows) while individually clicking the file names. 
 The selected layers will be added in default colors. 
 ![layers](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/04_LayerOrder.png)
 The cities layer is represented by points and the countries layer is represented by polygons. The order of the layers can be controlled with the `Layers panel` to the left of the Data Frame. 
