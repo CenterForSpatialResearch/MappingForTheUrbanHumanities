@@ -265,8 +265,9 @@ Last we will add two text boxes, one with a title for the map and another with a
 
 Finally use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG. 
 
-![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/
-\Mapping_WorldPopulation.png)
+![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/Mapping_WorldPopulation.png)
+
+
 
 
 
