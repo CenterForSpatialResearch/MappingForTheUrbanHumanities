@@ -43,6 +43,7 @@ If you want to move one of the point features you can use the move feature tool 
 
 When finished, depress the toggle editing tool ![DigitizingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/Digitize16.png) to close the editing session
 Next you will digitize some of the park pathways.  Create another new shapefile layer as above, but this time choose “Line” as the vector type and BronxParkPaths as the file name:
+
 ![DigitizingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/Digitize17.png)
 
 ![DigitizingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/Digitize18.png)
