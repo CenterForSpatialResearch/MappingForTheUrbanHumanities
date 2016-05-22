@@ -12,7 +12,7 @@ With this exercise, you will learn introductory skills involved in using ArcGIS 
 8. accessed the metadata of an existing GIS dataset
 9. worked with projections and examined the impacts of projection transformations on spatial analysis
 
-Part 00
+####Part 00
 Download the GitHub repository for this course. The Class_Data folder will then have all of the datasets needed for tutorials. 
 
 ###Mapping Data 00: Mapping World Population(s)
@@ -24,7 +24,9 @@ We are interested in creating a map of world countries and cities (and at the sa
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/01_OpenQGIS.png)
 
 * Begin to familiarize yourself with the interface.
+
 ####Adding Layers
+
 * In order to construct our map within QGIS we will need to add our data layers to the map project. There are several ways to accomplish this however we will begin by using the `Add Vector Layer` button. 
 
 ![vector](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
@@ -33,11 +35,15 @@ We are interested in creating a map of world countries and cities (and at the sa
 * The selected layers will be added in default colors. 
 ![layers](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/04_LayerOrder.png)
 * The cities layer is represented by points and the countries layer is represented by polygons. The order of the layers can be controlled with the `Layers panel` to the left of the Data Frame. 
-* **Click** and drag the admin_0_countries layer on top of the populated_places layer. The cities points are no longer visible because they are behind the countries polygons (or only visible at the borders of the countries and the oceans). 
+
+**Click** and drag the admin_0_countries layer on top of the populated_places layer. The cities points are no longer visible because they are behind the countries polygons (or only visible at the borders of the countries and the oceans). 
+
 ![order](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/03_Adding_Layers.png)
+
 We can change this by removing the fill color of the country polygons, leaving only the outline of their boundaries. To do this, we must change the style of the data layer. That is, we will change the way the data is styled or symbolized on the map. The simplest style for any dataset is to apply a single symbol to every feature within the layer. 
 
 We will display the countries as just borders. To access the `Style Menu` **double-click** on the layer name in the Layers panel, or **right-click** on the layer name and select `Properties.`  There are many different ways to symbolize data on a map through QGIS. For now, we will just use one style for all of the features in the layer. 
+
 ![properties](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/05_Properties.png)
 
 Once inside the Layer Properties Menu **select** the `Style` tab. **Select** `Simple Fill` and then in the `Symbol layer type` menu **select** Outline: Single line. 
