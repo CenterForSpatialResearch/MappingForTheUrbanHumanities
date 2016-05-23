@@ -17,3 +17,4 @@ This is a key to and a brief description of the main elements of the QGIS interf
 
 * If you hover over any button in the interface a brief description of that button will appear. additionally if you want a description of a specific element of the interface select the `What’s This?` button circled in blue and click anywhere in the interface for a brief description of that element. 
 
+
