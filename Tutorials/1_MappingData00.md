@@ -24,7 +24,7 @@ We are interested in creating a map of world countries and cities (and at the sa
 
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/01_OpenQGIS.png)
 
-Begin to familiarize yourself with the interface.
+Begin to familiarize yourself with the interface. You can also refer to this [brief description](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/QGIS_Interface.md) of the elements of the interface for more information. 
 
 ####Adding Layers
 
