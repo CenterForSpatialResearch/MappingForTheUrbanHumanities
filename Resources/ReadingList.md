@@ -24,6 +24,8 @@ Geographies of the Past.” Progress in Human Geography. 2007. 31:5, 638-653.
  
 Harley, J.B. “Maps, Knowledge, and Power.” In The Iconography of Landscape. Eds. Dennis Cosgrove, Stephen Daniels. Cambridge: Cambridge University Press, 1988, pp. 277-312.
  
+Kurgan, Laura. Close Up at a Distance: Mapping, Technology, and Politics. New York: Zone Books, 2013.
+
 Lefebvre, Henri. The Production of Space. London: Wiley, 1992.
 
 Miller, Harvey J. “Tobler’s First Law and Spatial Analysis.” Annals of the Association of American Geographers. 2004, 94(2): 284-289.
