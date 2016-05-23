@@ -146,7 +146,7 @@ Studio@Butler
 * Designing Methodologies and Assignments 
 
 
-**Monday, June 6 | Spatial Methods in Interdisciplinary Seminars**
+**Monday, June 6 | Spatial Pedagogies**
 300 S Buell Hall
 
 * 1:00-2:30pm Spatial Pedagogies: a conversation with Laura Kurgan, Director CSR, Juan Francisco Saldarriaga, Associate Research Scholar, CSR and Leah Meisterlin, Assistant Professor of Urban Planning GSAPP
