@@ -11,7 +11,6 @@ Crampton, Jeremy W. 1994. Cartography's Defining Moment: The Peters Projection C
 
 Curry, Michael R. “Rethinking Rights and Responsibilities in Geographic Information Systems: Beyond the Power of the Image” Cartography and Geographic Information Systems. 1995, 22(1): 58-69.
 
-
 Dear, Michael, Jim Ketchum, Sarah Luria, Doug Richardson. GeoHumanities: Art, History, Text at the Edge of Place. 
 
 Field, Kenneth. “Editorial: Reflections on a Criminal Crime Map.” The Cartographic Journal. 2011, 48(1): 1-3.
@@ -52,7 +51,7 @@ Tufte, Edward. Envisioning Information: Narratives of Space and Time. Cheshire, 
 Press, 1990.
 
 Presner, Todd David Shepard, and Yoh Kawano. HyperCities: Thick Mapping in the Digital Humanities. Cambridge: Harvard University Press. 2014. 
-HyperCities digital component: http://www.hypercities.com
+	* [HyperCities digital component](http://www.hypercities.com)
 
 Vershbow, Ben (2013): NYPL Labs: Hacking the Library, Journal of Library Administration, 53:1, 79-96
 
@@ -60,13 +59,13 @@ Wallace, Timothy R. and Charles van den Heuvel. “Truth and Accountability in G
 
 
 ####Textbooks/work books
-Donnelly, Frank. Introduction to GIS Using Open Source Software. 2015	
-http://faculty.baruch.cuny.edu/geoportal/resources/practicum/gisprac_2015july_fd.pdf
+[Donnelly, Frank. Introduction to GIS Using Open Source Software. 2015](http://faculty.baruch.cuny.edu/geoportal/resources/practicum/gisprac_2015july_fd.pdf)	
 
-Sutton, Tim, Rüdiger Thiede, Horst Düster, Marcelle Sutton. QGIS Training Manual.http://docs.qgis.org/2.2/en/docs/training_manual/
+[Sutton, Tim, Rüdiger Thiede, Horst Düster, Marcelle Sutton. QGIS Training Manual.](http://docs.qgis.org/2.2/en/docs/training_manual/)
 
-Bolstad, Paul. “GIS Fundamentals, 5th Edition. 2016. http://www.paulbolstad.net/gisbook.html
+[Bolstad, Paul. “GIS Fundamentals, 5th Edition. 2016.](http://www.paulbolstad.net/gisbook.html)
 
-Graser, Anita. Learning QGIS -- 3rd Edition. 2016 (https://www.packtpub.com/big-data-and-business-intelligence/learning-qgis-third-edition)
-Menke, Kurt. Richard Smith Jr., Luigi Pirelli,John Van Hoesen. Mastering QGIS. 2015. https://www.packtpub.com/application-development/mastering-qgis
+[Graser, Anita. Learning QGIS -- 3rd Edition. 2016](https://www.packtpub.com/big-data-and-business-intelligence/learning-qgis-third-edition)
+
+[Menke, Kurt. Richard Smith Jr., Luigi Pirelli,John Van Hoesen. Mastering QGIS. 2015.](https://www.packtpub.com/application-development/mastering-qgis)
 
