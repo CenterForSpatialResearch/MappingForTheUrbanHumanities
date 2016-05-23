@@ -33,22 +33,22 @@ The course aims to equip faculty with a grasp of the methods and methodologies o
 
 ###Materials 
 * Laptop with qGIS 2.8 installed 
-* All course tutorials will be provided and available via Github
+* All course tutorials will be provided and available via [Github](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/tree/master/Tutorials)
 * Optional: a 16 GB flash drive to store course data + exercises
 
 ##Background on CSR 
 The Center for Spatial Research was established in 2015 as a hub for urban research that links design, architecture, urbanism, the humanities and data science. It sponsors research and curricular activities built around new technologies of mapping, data visualization, data collection, and data analysis. CSR focuses on data literacy as well as interrogating the world of 'big data,' working to open up new areas of research and inquiry with advanced design tools to help scholars, students as well as our collaborators and audiences, to understand cities worldwide – past present and future.
 
-Our projects generally involve collaborations with researchers and advocates across a variety of disciplines and institutions, working with them to communicate information clearly, critically, responsibly, and provocatively. We are committed to rigorous and reliable work with data; to harnessing the most powerful techniques of design and visualization; and to a critical reflection on the limits and ideologies of both data and its representation. Based in the disciplines of design, architecture and urbanism we make links with and bring spatial expertise to humanities as well as the sciences.
+Our projects generally involve collaborations with researchers and advocates across a variety of disciplines and institutions, working with them to communicate information clearly, critically, responsibly, and provocatively. We are committed to rigorous and reliable work with data; to harnessing the most powerful techniques of design and visualization; and to a critical reflection on the limits and ideologies of both data and its representation. Based in the disciplines of design, architecture and urbanism we make links with and bring spatial expertise to the humanities as well as the sciences.
 
 ###Readings
 We highly recommend that you read the following three essays/chapters during the course. A further list of resources (spanning critical approaches to GIS, project and course examples, and instructional texts) is available here.
 
-* Miller, Roger P. “Beyond Method, Beyond Ethics: Integrating Social Theory into GIS and GIS into Social Theory.” Cartography and Geographic Information Systems. 1995, 22(1): 98-103.
+* Miller, Roger P. [“Beyond Method, Beyond Ethics: Integrating Social Theory into GIS and GIS into Social Theory.”](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Readings/1995_Miller_BeyondMethodBeyondEthics_GISSocialTheory.pdf) Cartography and Geographic Information Systems. 1995, 22(1): 98-103.
 
-* Travis, Charles B. “Toward the Spatial Turn.” In Abstract Machine: Humanities GIS. Redlands, California: ESRI Press, 2015.
+* Travis, Charles B. [“Toward the Spatial Turn.” In Abstract Machine: Humanities GIS.](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Readings/Travis%202015%20Abstract%20Machines%20Ch2%20Toward%20the%20Spatial%20Turn.pdf) Redlands, California: ESRI Press, 2015.
 
-* Urban Theory Lab. “Envisioning an Urbanized Planet—Materials” in Implosions/Explosions. Edited by Neil Brenner. Berlin: JOVIS, 2014. 
+* Urban Theory Lab. [“Envisioning an Urbanized Planet—Materials” in Implosions/Explosions.](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/Readings/UrbanTheoryLab%202013%20VizualizingAnUrbanizedPlanetMaterials%20ImplosionsExplosions.pdf) Edited by Neil Brenner. Berlin: JOVIS, 2014. 
 
 ###Schedule and Topics
 **Monday, May 23 | Introduction**
