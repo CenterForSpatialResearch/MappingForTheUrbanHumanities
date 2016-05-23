@@ -53,7 +53,7 @@ Tufte, Edward. Envisioning Information: Narratives of Space and Time. Cheshire, 
 Press, 1990.
 
 Presner, Todd David Shepard, and Yoh Kawano. HyperCities: Thick Mapping in the Digital Humanities. Cambridge: Harvard University Press. 2014. 
-	* [HyperCities digital component](http://www.hypercities.com)
+	* HyperCities [digital component](http://www.hypercities.com)
 
 Vershbow, Ben (2013): NYPL Labs: Hacking the Library, Journal of Library Administration, 53:1, 79-96
 
