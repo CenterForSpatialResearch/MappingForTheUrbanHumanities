@@ -1,4 +1,4 @@
-The QGIS Interface
+##The QGIS Interface
 
 This is a brief description of the main elements of the QGIS interface. 
 The QGIS Interface
@@ -16,5 +16,3 @@ This is a key to and a brief description of the main elements of the QGIS interf
 6. **Status Bar:** the status bar shows the position of your cursor in the map view, the current scale and rotation of the map view, and the project’s coordinate system. 
 
 * If you hover over any button in the interface a brief description of that button will appear. additionally if you want a description of a specific element of the interface select the `What’s This?` button circled in blue and click anywhere in the interface for a brief description of that element. 
-
-
