@@ -31,15 +31,11 @@ It should still contain the countries polygons and populated places points we ad
 
 Then in the dialog box which opens browse to the MappingData\Raster folder and select gpw-v4-population-count_2010.tif. We will speak about the qualities of raster datasets a bit more later but for now let’s just add it to the map. After you’ve added this layer you can **un-click** the box next to the layer name in int Layers menu in order to toggle the visibility of the layer off. 
 
-**Select** the `Add delimited data` button in order to add the table containing population by country. 
+Now we will add the table that describes population by country which we will join to the country polygons in order to be able to examine country level population values spatially. QGIS can read several types of tabular data formats, including .csv and .xls files. Our total population file is saved an .xls file (note QGIS cannot generally read .xlsx files saved in the newest version of microsoft excel). We will again use the `Add vector layer` button to add our TotalPopulation_Countries.xls file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source -- later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button).
 
-![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/09_Adding_Layers_Delimited.png)
+![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
 
-Then in the dialog box which opens browse to the MappingData\Tabular folder and **select** TotalPopulation_Countries.csv. Select `CSV (comma separated values)` as the file format, this describes the way that the tabular dataset is structured. Notice that there is also a file named TotalPopulation_Countries.csvt in the MappingData\Tabular folder, this file tells QGIS the data type for each field in the TotalPopulation_Countries.csv -- we will cover this in greater depth later on.
-
-**Select** `First record has field names,` because we have formatted the table so that the names of the variables are in the first row. Select `No geometry (attribute only table)` for the Geometry definition. Then use the preview window to make sure the dataset is displaying correctly. You should see three columns with the headers, Country_Code, Name, Pop_2010. 
-
-![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/08_AddCSV.png)
+Then in the dialog box which opens browse to the MappingData\Tabular folder and **select** TotalPopulation_Countries.xls. You'll notice TotalPopulation_Countries has been added to the Layers menu. Because it is just a table and does not have any geometry it does not show up in our map view. 
 
 ####Performing a Table Join
 In order to answer questions about world population by country we will join tabular data published by the United Nations to the country polygons we have already mapped. A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.  
