@@ -19,7 +19,7 @@ The data we are using about populated places is aggregated by [Natural Earth v. 
 Country-level population data was published by the [United Nations Population Division](http://esa.un.org/unpd/wpp/Download/Standard/Population/) in 2010. All figures are reported in thousands, i.e., if the population field says 7,000 in the dataset this equals 7,000,000 inhabitants. We have provided a cleaned version of this dataset but the original can be downloaded [here](http://esa.un.org/unpd/wpp/Download/Standard/Population/). 
 
 ####Downloads
-In addition to the data files you have downloaded already you will need to download the Gridded Population of the World raster dataset here. Please create a new folder in your Class_Data\MappingData directory called Raster and save this file there. Once it has downloaded unzip the file so that we can use its contents. 
+In addition to the data files you have downloaded already you will need to download the Gridded Population of the World raster dataset [here](https://drive.google.com/file/d/0B5KywkNXsT4JYlZGd1lReUVyYVk/view?usp=sharing). Please create a new folder in your Class_Data\MappingData directory called Raster and save the GriddedPop.zop file there. Once it has downloaded unzip the file so that we can use its contents. 
 
 ####Setting up QGIS
 Open your MappingData_Population.qgs file. 
@@ -29,7 +29,7 @@ It should still contain the countries polygons and populated places points we ad
 
 ![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/09_Adding_Layers_Raster.png)
 
-Then in the dialog box which opens browse to the MappingData\Raster folder and select gpw-v4-population-count_2010.tif. We will speak about the qualities of raster datasets a bit more later but for now let’s just add it to the map. After you’ve added this layer you can **un-click** the box next to the layer name in int Layers menu in order to toggle the visibility of the layer off. 
+Then in the dialog box which opens browse to the MappingData\Raster folder and select gpw_v4_2010.tif. We will speak about the qualities of raster datasets a bit more later but for now let’s just add it to the map. After you’ve added this layer you can **un-click** the box next to the layer name in int Layers menu in order to toggle the visibility of the layer off. 
 
 Now we will add the table that describes population by country which we will join to the country polygons in order to be able to examine country level population values spatially. QGIS can read several types of tabular data formats, including .csv and .xls files. Our total population file is saved an .xls file (note QGIS cannot generally read .xlsx files saved in the newest version of microsoft excel). We will again use the `Add vector layer` button to add our TotalPopulation_Countries.xls file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source -- later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button).
 
