@@ -5,6 +5,9 @@
 ####Premise
 We will now zoom in to the level of the continent and examine population along historical rail lines. We are interested in investigating population growth in counties that contain rail lines between 1850 and 1870. In addition, we will learn about projection systems and will observe the impact that changing projection systems has on spatial analysis by comparing population density calculated under different projection systems.   
 
+####New Downloads Before We Begin
+**Before we begin the tutorial download `Counties_1870_Albers_PopJoin-.zip` from [this link](https://drive.google.com/file/d/0B5KywkNXsT4JMFkzdlR1Vl9KVk0/view?usp=sharing)**. Save this in the Class_Data\1_MappingData\Shape folder. 
+
 ####The Data
 
 We will be working with data created and published by the University of Nebraska Lincoln of historic rail networks in the U.S. We have two shapefiles, one for rail lines built as of 1850, and another for those built as of 1870. We have already included the data in the Mapping Data folder however it is available [here](http://railroads.unl.edu/resources/) for download.  
@@ -61,55 +64,36 @@ Your next step will be to join the table of population data to the county bounda
 ####Preparing your data
 **Performing a Table Join**
 
-The 1850 and 1870 population data that we will be working with is in tabular form and thus we will then need to join his data to county boundary polygons in order to analyze and represent it spatially. We have already performed one table join in the previous exercise, however here we will go through the steps from the beginning. We will only do this for 1850, we have provided you with a shapefile of counties in 1870 with population data already joined to them. 
+The 1850 and 1870 population data that we will be working with is in tabular form and thus we will then need to join his data to county boundary polygons in order to analyze and represent it spatially. We have already performed one table join in the previous exercise, so this will be review. We will only do this for 1850, we have provided you with a shapefile of counties in 1870 with population data already joined to them. 
 
-First, navigate to Course_Data/MappingData/Tabular and open nhgis_1850_Population_county.csv with Microsoft Excel. In addition open and its associated codebook nhgis_1850_Population_county_codebook.txt with the text editor of your choice. NHGIS uses some abbreviated naming conventions for its columns which are not entirely intuitive, however the codebook which is always automatically downloaded with their data clarifies the meanings of these column names. 
+First, **open** Microsoft Excel and then navigate to Course_Data/MappingData/Tabular and open `nhgis_1850_Population_county.csv`. In addition open and its associated codebook `nhgis_1850_Population_county_codebook.txt` with the text editor of your choice. NHGIS uses some abbreviated naming conventions for its columns which are not entirely intuitive, however the codebook which is always automatically downloaded with their data clarifies the meanings of these column names. 
 
 In the 1850 population CSV file you’ll see 8 columns: GISJOIN, YEAR, STATE, STATEA, COUNTY, COUNTYA, AREANAME	, ADQ001. 
 
-If we look in the code book we’ll notice that ADQ001 is the field that contains total population value for each county. Lets rename ADQ001 something more intuitive: POP_1850. 
+If we look in the codebook we’ll notice that ADQ001 is the field that contains total population value for each county. Lets rename ADQ001 something more intuitive: POP_1850. 
 
-Recall from the previous exercise, that in order to perform a table join QGIS must read both a .csv file with the values, and a .csvt file which describes the data type of each column. Before we had already created the .csvt file. Now we will create one. 
+Recall from the previous exercise, that in order to add a table to QGIS it must be saved as an .xls file (note for future reference there are other tabular file formats that QGIS can read however xls files are the easiest way to make sure that QGIS understands the datatype contained in each column of your data). 
 
-This file will tell QGIS exactly what type of data each of the fields is in. The different types of data your fields can take are:
+**Save** the nhgis_1850_Population_county.csv file as a .xls. **Select** `File`>`Save As`. Then select `Excel 1997-2004 Workbook (xls)` as the File format and save the file as `nhgis_1850_Population_cty.xls` in the MappingData\Tabular folder. 
 
-* String - Represents text (or columns with both letters and numbers)
-* Integer - Represents whole numbers
-* Real - Represents both negative and positive numbers, with decimal points
-* Date - Date in the format YYYY-MM-DD
-* Time - Time in the format HH:MM:SS+nn
-* DateTime - Date and time in the format YYYY-MM-DD HH:MM:SS+nn
-
-So, we need to specify the data type for each column. In your text editor, open a new file.
-Now, for every field, write the type of data it takes in quotation marks. The file should read:
-“String”,”Integer”,”String”,”Integer”,”String”,”Integer”,”String”,”Integer.” Note that every item is separated by a comma and that the first three fields, even though they seem like they are numbers, are actually text fields. This is very important, since we are going to use those fields to join our census table to the census boundaries, which also contain those fields as text. If we have one file with text and another with integers or real numbers, the program won't be able to match it.
-
-If you are working on Mac's TextEdit you need to format your file as 'Plain Text'. To do this **click** on `Format` and then `Make Plain Text`. This will change your file from an .rtf to a simple .txt.
-
-Save your file with the same name as the table but with a different extension. It is important to do this so that QGIS understands that this .csvt file corresponds to the other .csv or .txt file. In both Windows Notepad and in Mac TextEdit you need to manually type the extension (.csvt) and in TextEdit you need to un-check the option that says 'If no extension is provided, use .txt'.
-
-Your file should be named nhgis_1850_Population_county.csvt and it should look something like this:
-
-![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData02/06_CSVT.png)
+![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData02/06_xls.png)
 
 Now we can join the 1850 population data to the county polygons for 1850 and begin to ask some questions about population along train lines in 1850 and 1870. 
 
 **Launch** QGIS. 
 
-First add the other vector data layers we will be working with using the add vector data button and then navigating to Course_Data/MappingData/Shape and adding 
+First add the other vector data layers we will be working with using the `add vector layer` button and then navigating to Course_Data/MappingData/Shape and adding 
 
-* USCounty_1870_Albers_PopJoin.shp 
+* USCounty_1870_Albers_PopJoin-1.shp 
 * USCounty_1850_Albers.shp
 * RR1850_Albers.shp
 * RR1850_Albers.shp files
 
-Then use the add delimited text layer in order to add the table of population values: 
-* nhgis_1850_Population_county.csv
-Make the following selections when adding the dataset to your map project. 
+Then add the table of population values using the `add vector layer`button:
+* nhgis_1850_Population_cty.xls
 
-![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData02/07_Delimited.png)
 
-**Save** your QGIS project as MappingData_02_Population.
+**Save** your QGIS project as MappingData_02_Population in the MappingForTheUrbanHumanities\Tutorials folder.
 
 We will now repeat the steps we took in the previous exercise to join the 1850 population data to the 1850 counties shapefile. 
 
@@ -158,7 +142,7 @@ First we will review some terminology:
 
 We will first check the current projection of our map layers and then re-project our data and explore the results. 
 
-**Open** the layer properties for US_county_1870_Albers_PopJoin and select the General tab. The projection or the geographic coordinate reference system for the layer is displayed in the highlighted area. 
+**Open** the layer properties for US_county_1870_Albers_PopJoin-1 and select the General tab. The projection or the geographic coordinate reference system for the layer is displayed in the highlighted area. 
 
 ![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData02/11_Projection.png)
 
@@ -186,7 +170,7 @@ Now that we have explored the visual transformations produced by different proje
 
 Specifically, we will ask, what were the ten densest counties in 1870, and compare the results obtained under two different projection systems. 
 
-**Right-click** US_county_1870_Albers_PopJoin in the layers menu and select `save as`. Save the new layer as US_county_1870_UTM10_PopJoin. In the dialog box which opens click the globe next to the CRS bar in order to browse for UTM zone 10N using the coordinate reference system selector. Click `OK` on both windows to save the layer.  
+**Right-click** US_county_1870_Albers_PopJoin-1 in the layers menu and select `save as`. Save the new layer as US_county_1870_UTM10_PopJoin. In the dialog box which opens click the globe next to the CRS bar in order to browse for UTM zone 10N using the coordinate reference system selector. Click `OK` on both windows to save the layer.  
 
 ![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData02/13_SaveAsUTM.png)
 
