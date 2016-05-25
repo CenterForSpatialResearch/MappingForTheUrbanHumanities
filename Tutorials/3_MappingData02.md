@@ -135,8 +135,10 @@ First we will review some terminology:
 
 **Geographic coordinate system**
 * A geographic coordinate system (or GCS) is a means for defining the locations of coordinates on the earth on a three dimensional spheroid – it is a way to model the shape of the earth in Cartesian space. Points are located using their latitude and longitude values and distances are expressed in an angular unit of measure such as decimal degrees. 
+
 **Datum**
 * A datum is a set of transformations that translates a spheroid model of the earth to the irregularities of the earth’s actual surface. Each geographic coordinate system is based off of a specific datum. The World Geodedic System (WGS) 1984 is widely used today and is the default in QGIS. 
+
 **Projected Coordinate System**
 * A projected coordinate system is a series of mathematical transformations that translate geographic coordinates (the GCS), which are the coordinates of locations on a curved surface, into locations on a flat surface. All projected coordinate systems introduce distortions to our spatial features and thus it is important to choose a coordinate system well suited to the area of interest of a map or to a specific argument. There are lots of different projection systems each with different advantages: some preserve areas, others distance, direction.
 
