@@ -87,7 +87,7 @@ First add the other vector data layers we will be working with using the `add ve
 * USCounty_1870_Albers_PopJoin-1.shp 
 * USCounty_1850_Albers.shp
 * RR1850_Albers.shp
-* RR1850_Albers.shp files
+* RR1870_Albers.shp files
 
 Then add the table of population values using the `add vector layer`button:
 * nhgis_1850_Population_cty.xls
