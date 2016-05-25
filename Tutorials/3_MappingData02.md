@@ -6,7 +6,7 @@
 We will now zoom in to the level of the continent and examine population along historical rail lines. We are interested in investigating population growth in counties that contain rail lines between 1850 and 1870. In addition, we will learn about projection systems and will observe the impact that changing projection systems has on spatial analysis by comparing population density calculated under different projection systems.   
 
 ####New Downloads Before We Begin
-**Before we begin the tutorial download `Counties_1870_Albers_PopJoin-.zip` from [this link](https://drive.google.com/file/d/0B5KywkNXsT4JMFkzdlR1Vl9KVk0/view?usp=sharing)**. Save this in the Class_Data\1_MappingData\Shape folder. 
+**Before we begin the tutorial download `Counties_1870_Albers_PopJoin-1.zip` from [this link](https://drive.google.com/file/d/0B5KywkNXsT4JMFkzdlR1Vl9KVk0/view?usp=sharing)**. Save this in the Class_Data\1_MappingData\Shape folder. 
 
 ####The Data
 
