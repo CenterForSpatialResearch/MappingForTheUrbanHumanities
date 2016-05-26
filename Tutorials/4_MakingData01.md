@@ -10,14 +10,17 @@ In this exercise, you will explore some of the georeferencing tools available in
 
 The map you will be using for this exercise is one sheet of six from "Map or plan of that part of the Borough of the Bronx, City of New York, lying easterly of the Bronx River" published in 1902.  This map is from the Columbia Map collection and is an exceptionally detailed, large scale (1:7,200) series made shortly after the area east of the Bronx River was annexed from Westchester to the Bronx, and the Bronx was consolidated into New York City and New York County.  The library catalog record for the map can be found [here] (https://clio.columbia.edu/catalog/9282162).  If you would like to see the entire map, there is another copy (in a lower resolution) in the New York Public Libraries digital collections [here] (http://digitalcollections.nypl.org/items/dc910ee0-4682-0131-4759-58d385a7bbd0)
 
+You are going to use [OpenStreetMap (OSM]) (https://www.openstreetmap.org/about) as reference data for the georeferencing process.  OSM provides a free, open-source map of the world from public domain and volunteered data.
 
 
+
+####Setting up QGIS
 
 Open QGIS:
 
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef1.png)
 
-You are going to use OpenStreetMap (OSM) as reference data for the georeferencing process.  OSM provides a free, open-source map of the world from public domain and volunteered data.   You can view the OSM basemap service is QGIS through the OpenLayers plugin.  This plugin does not come pre-installed with QGIS, so you will probably need to add it.  Under the plugins menu, select “Manage and Install Plugins…” 
+You are going to use OSM data as the reference data for the georeferencing process.  OSM provides a free, open-source map of the world from public domain and volunteered data.   You can view the OSM basemap service is QGIS through the OpenLayers plugin.  This plugin does not come pre-installed with QGIS, so you will probably need to add it.  Under the plugins menu, select “Manage and Install Plugins…” 
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef2.png)
 
 The plugins dialog will open.  Search for “Openlayers Plugin.”  Highlight it, and click “Install plugin”:
