@@ -19,7 +19,7 @@ Open QGIS:
 Click on the add raster button ![DigitizingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/Digitize2.png) and navigate to the georeferenced image you made in the georeferencing workshop.  Since you verified its accuracy already, you will not need any basemap data for this exercise:
 ![DigitizingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/Digitize3.png)
 
-This map is part of a very large-scale plan and the Bronx park area, which contains the then-new botanical garden and zoo, are particularly detailed.  Every structure, road, walking path, and tree is mapped.  In the next part of this exercise, you will create new vector datasets, and hand-digitize some of the path and tree features.
+This map is part of a very large-scale plan and the Bronx park area, which contains the then-new botanical garden and zoo, is particularly detailed.  Every structure, road, walking path, and tree is mapped.  In the next part of this exercise, you will create new vector datasets, and hand-digitize some of the path and tree features.
 
 First you will digitize some trees.  For the trees you will use point geometry, so this will be a particularly simple dataset.
 
