@@ -4,7 +4,7 @@
 
 ####Premise
 
-In this exercise, you will explore some of the on-screen hand digitizing tools available in QGIS and use them to digitize trees paths and other features from a georeferenced map.  In essence, you will be converting raster spatial data into vector based features.
+In this exercise, you will explore some of the on-screen hand digitizing tools available in QGIS and use them to digitize trees, paths and other features from a georeferenced map.  In essence, you will be converting raster spatial data into vector based features.
 
 ####Notes on the data: 
 
