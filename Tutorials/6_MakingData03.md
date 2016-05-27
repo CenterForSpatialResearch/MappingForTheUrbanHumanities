@@ -1,8 +1,13 @@
-##Making Data 03
+##Making Data 
+
+###Making Data 03: Geocoding coordinates and street addresses
+
+####Premise
+
+In this exercise you are going to map locations related to music in the borough of the Bronx by geocoding – converting tabular data into spatial mapping files. First, you will take geographic coordinates and display them visually.  Then you will take a list of street addresses and locate them by using a geolocation service, matching up the addresses against a database of locations.
 
 ###Geocoding Exercise
 
-In this exercise you are going to map locations related to music in the borough of the Bronx by geocoding – converting tabular data into spatial mapping files. First, you will take geographic coordinates and display them visually.  Then you will take a list of street addresses and locate them by using a geolocation service, matching up the addresses against a database of locations. 
 First, you will find businesses in the music industry located throughout the Bronx.  You are going to use the ReferenceUSA business directory to identify these businesses.  ReferenceUSA is a comprehensive database of business locations throughout the US.  Columbia Libraries maintains a subscription to this service. 
 
 Go to the CU Libraries’ homepage and search for “ReferenceUSA” in the quicksearch bar:
