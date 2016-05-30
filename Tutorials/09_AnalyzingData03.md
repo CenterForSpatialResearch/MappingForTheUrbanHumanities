@@ -63,32 +63,46 @@ Under the raster menu, click on Analysis>Proximity:
 Use NYCSchoolRaster as the input file and save the output file as NYCSchoolDistance.tif in the tutorial directory. Make sure to select “geo” for dist units:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze315.png)
+
 Click OK: 
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze316.png)
 
-Now you will generalize these proximity based rasters into discrete distance classes.  Specifically, you will classify the proximity based rasters into classes of 0-1/4 mile, ¼-½, mile, ½ - ¾ mile and above ¾ mile distances.
+Now you will generalize these proximity based rasters into discrete distance classes.  Specifically, you will classify the proximity based rasters into classes of 0-¼ mile, ¼-½, mile, ½ - ¾ mile and above ¾ mile distances.
 
 Unfortunately there are no simple to use tools for this in QGIS.  You will need to use one of the built in GRASS tools for this. Open the processing toolbar by choosing Toolbox under the processing menu:
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze317.png)
+The processing toolbox should open on the right hand side of the screen: 
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze318.png)
+Expand the GRASS commands in the processing toolbar and then expand the Raster command set.  Open the “r.reclass” command: 
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze319.png)
+This tool requires that you build a reclass rules file in order to define the classes.  This needs to be a text file containing the needed ranges. Open a text editor (notepad in windows or TextEdit in MacOS will work for this) and type:
+
+0 thru 1319.99 = 1
+1320 thru 2639.99 = 2
+2640 thru 3959.99 = 3
+3960 thru 82000 = 4
+
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze320.png)
+Save the file as DistanceClassifications.txt in your work directory.
+
+In the r.reclass tool menu, choose NYCLibraryDistance as the input file.  Add the DistanceClassifications.txt file you just made as the file containing reclass rules.  Choose 50 as your cellsize.  Save the “reclassified” output to your working directory as NYCLibraryDistanceReclass.tif:
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze321.png)
-
+Click Run.  The result should add automatically to QGIS.  Note that you can now clearly see the reclassified “bands” of values:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze322.png)
+Run the same r.reclass command for the NYCSchoolDistance raster.  Use the same settings and the same DistanceReclass.txt file.  Save the “Reclassified” Output as NYCSchoolDistanceReclass.tif:
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze323.png)
