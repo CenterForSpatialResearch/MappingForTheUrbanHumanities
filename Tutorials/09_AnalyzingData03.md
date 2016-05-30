@@ -44,6 +44,7 @@ Run the rasterize tool again for the NYC_Schools Layer.  Choose NYC_Schools as t
  Click OK:
  
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze311.png)
+
 Next, you will create a proximity based raster layers representing the distances to libraries and schools. First, you will calculate distances to the nearest library.  
 Under the raster menu, click on Analysis>Proximity:
 
@@ -57,6 +58,7 @@ You should not need to specify the extent this time as the tool will automatical
 The resultant raster will represent the distance in feet to the nearest library:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze314.png)
+
 Next, you will calculate distances to the nearest school using the same process.  
 Under the raster menu, click on Analysis>Proximity:
 
@@ -75,14 +77,17 @@ Unfortunately there are no simple to use tools for this in QGIS.  You will need 
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze317.png)
+
 The processing toolbox should open on the right hand side of the screen: 
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze318.png)
+
 Expand the GRASS commands in the processing toolbar and then expand the Raster command set.  Open the “r.reclass” command: 
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze319.png)
+
 This tool requires that you build a reclass rules file in order to define the classes.  This needs to be a text file containing the needed ranges. Open a text editor (notepad in windows or TextEdit in MacOS will work for this) and type:
 
 0 thru 1319.99 = 1
@@ -91,46 +96,84 @@ This tool requires that you build a reclass rules file in order to define the cl
 3960 thru 82000 = 4
 
 
-
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze320.png)
+
 Save the file as DistanceClassifications.txt in your work directory.
 
 In the r.reclass tool menu, choose NYCLibraryDistance as the input file.  Add the DistanceClassifications.txt file you just made as the file containing reclass rules.  Choose 50 as your cellsize.  Save the “reclassified” output to your working directory as NYCLibraryDistanceReclass.tif:
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze321.png)
+
 Click Run.  The result should add automatically to QGIS.  Note that you can now clearly see the reclassified “bands” of values:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze322.png)
+
 Run the same r.reclass command for the NYCSchoolDistance raster.  Use the same settings and the same DistanceReclass.txt file.  Save the “Reclassified” Output as NYCSchoolDistanceReclass.tif:
 
-
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze323.png)
+
+Click Run. Again, the result should add automatically to QGIS: 
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze324.png)
 
+Note that the r.reclass command in QGIS somewhat confusingly names all the output “Reclassified” making it difficult to determine which layer is being referenced.  However, you can change the names in the layer panel by right-clicking on the two “Reclassified” layers and choosing “rename.”  Rename the two layers “ReclassifiedLibrary” and “ReclassifiedSchools” respectively.  
+
+Now you will combine these two reclassified distance rasters into one by adding the two values together.  This can be done in the raster calculator.  Under the raster menu, choose “raster calculator”:
+
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze325.png)
+
+In the raster calculator, simply add the two layer together. The raster calculator expression should thus be: "ReclassifiedLibrary@1" + "ReclassifiedSchools@1"  Set the output layer as SchoolLibrarylDistanceWeightEqual:
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze326.png)
 
+Click OK.
+
+The output file should add automatically to QGIS: 
+
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze327.png)
 
+Note that the raster values now range from 2-8, giving an overall measure of proximity to both schools and libraries for all parts of the city.
+
+The calculation above gives equal weight to both libraries and schools.  You can also run the same calculation but giving greater weight to the libraries. 
+ 
+To do this, you will need to go back and reclassify the original NYCLibraryDistance raster as you did before.  Only now you will assign a different value to the reclassified output to reflect the higher weight of the library distances.  Open the DistanceClassifications.txt file you created earlier.  Edit it to the following:
+
+0 thru 1319.99 = 1
+1320 thru 2639.99 = 2
+2640 thru 3959.99 = 3
+3960 thru 82000 = 4
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze328.png)
 
+And save it as DistanceClassificationsLibraryWeight.txt.  You have multiplied the reclassified values by three.  This will give the library distances three times the weight of the schools in the final calculation.
+
+Once again, click on the r.reclass command in the processing window.  In the r.reclass tool menu, choose NYCLibraryDistance as the input file.  Add the DistanceClassificationsLibraryWeight.txt file you just made as the file containing reclass rules.  Choose 50 as your cellsize.  Save the “reclassified” output to your working directory as NYCLibraryDistanceReclassLibraryWeight.tif:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze329.png)
 
+Click Run.
+
+The output should add automatically to QGIS:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze330.png)
 
+Note that this result looks identical to ReclassfiedLibrary only the values are from 3-12 as  opposed to 1-4.  You could have calculated the same result by using the raster calculator to multiply the ReclassfiedLibrary layer by 3.  
+
+Rename the new raster to “ReclassifiedLibraryWeight” by right-clicking on it in the layers panel.
+Now you will use the raster calculator again to add this new raster to the rReclassifiedSchool raster.  Open the raster alculator in the raster menu.   Enter the equation "ReclassifiedSchools@1" + "SchoolLibrarylDistanceWeightEqual@1".  Save the file as DistanceLibraryWeight:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze331.png)
 
+Click OK. 
+
+The output should add automatically to QGIS: 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze332.png)
+
+Note that the raster values now range from 3-13, reflecting the higher weight to the library distances.
 
