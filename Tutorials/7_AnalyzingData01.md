@@ -109,8 +109,8 @@ We will be creating a number of new layers during this portion of the exercise s
 1.	On your menu bar navigate to `Vector`>`Geoprocessing Tools` > `Buffer(s)`.
 ![buffer](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/05_Buffer.png)
 
-a. Choose Bronx_Libraries as your input vector layer – this sets which layer the buffers are drawn around. 
-b. Set the buffer distance to 1320. Note: the values in this field have the same units as the projection of your input datalayer and map project. Our map is projected in the NAD83 New York State Plane (Long Island) projection system whose units are in feet. To confirm this you can open the layer properties and inspect the coordinate reference system for the layer. Thus we choose 1320 feet because this is equivalent to 1/4 mile. 
+  a. Choose Bronx_Libraries as your input vector layer – this sets which layer the buffers are drawn around. 
+  b. Set the buffer distance to 1320. Note: the values in this field have the same units as the projection of your input datalayer and map project. Our map is projected in the NAD83 New York State Plane (Long Island) projection system whose units are in feet. To confirm this you can open the layer properties and inspect the coordinate reference system for the layer. Thus we choose 1320 feet because this is equivalent to 1/4 mile. 
 c. Browse in order to save the Output shapefile as ‘BX_Library_QuarterMiBuffer` within your 3_AnalyzingData\Process folder. 
 d. Click `OK`. Then Click `Close`. 
 Your map should look something like the following: 
@@ -127,10 +127,15 @@ Your map should look something like the following:
 ![location](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/07_SpatialJoin.png)
 
   c. Just like with a table join the `Target vector layer` is the layer to which we would like to join new information to and the `Join vector layer` is the layer which we are joining to the target layer. In our case BX_Library_QuarteMiBuffer is the `Target vector layer` and Bronx_Schools is the `Join vector layer`
+
   d. Because there might be multiple features in the join layer within one of the target layer features we need to tell QGIS how we would like to summarize the attributes from the Bronx Schools layer when they are joined to the buffer around the libraries. We can tell QGIS to take the values of the attribute fields for the first school it finds or to compute a summary (either Mean, Min, Max, Sum, or Median) of the values of all features in the schools layer which lie within the target features.
+
   e. We want to know the total number of students enrolled in the schools which are within our ¼ mile buffers and thus we will **select** `Take summary of intersecting features`, and choose `sum`.
+
   f. Save the output shapefile within Class_Data/3_AnalyzingData/Process as ‘Library_QuartMiBuffer_SchoolsJoin`
+
   g. In the Output table options select Keep all records (including non-matching target records), this will ensure that the buffers for which there are no schools are kept in our dataset. 
+
   h. Select `OK`. 
   i. A warning box will appear letting you know that a new layer has been created as a result of this spatial join. Click `OK`. Then close the `Join attributes by location` dialogue box.
   j. Note that `Library_QuarterMiBuffer_SchoolsJoin` has now been added to your map as a layer. 
