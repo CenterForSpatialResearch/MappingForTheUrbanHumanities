@@ -32,6 +32,7 @@ Unfortunately, there are no automated methods to specify the processing extent i
 button to edit the GDAL command line.  You can enter the processing extent in the line after “gdal_rasterize.”  You will use the “–te” statement to define the extent, this statement takes the form “-te xmin ymin xmax ymax” Enter the statement as follows: “-te 550000 600000 730000 770000”. Your window should look like this:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze37.png)
+
 The raster will add to the map.  It may look like a solid field, this is fine.  Each library location will appear as a single raster with avalue of one and they may be imperceptable at this extent.
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze38.png)
@@ -39,14 +40,25 @@ The raster will add to the map.  It may look like a solid field, this is fine.  
 Run the rasterize tool again for the NYC_Schools Layer.  Choose NYC_Schools as the input file. Again, choose the “raster” field as the attribute value. Save the output as NYCSchoolRaster.tif in the shape directory for this exercise. You will have to choose a raster resolution for the output map.  Choose the “raster resolution in map units per pixel” and enter a resolution of 50 units for both the horizontal and vertical options.  Click on the edit![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze39.png) button to edit the GDAL command line and enter the statement “-te 550000 600000 730000 770000” after “gdal_rasterize”:
 
  ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze310.png) 
-
+ Click OK:
+ 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze311.png)
+Next, you will create a proximity based raster layers representing the distances to libraries and schools. First, you will calculate distances to the nearest library.  
+Under the raster menu, click on Analysis>Proximity:
 
-![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze312.png)
+![AnalyzingData]( https://git
+Use NYCLibraryRaster as the input file and save the output file as NYCLibraryDistance.tif in the tutorial directory. Make sure to select “geo” for dist units:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze313.png)
+You should not need to specify the extent this time as the tool will automatically use the extent of the input file.  Click OK.
+
+The resultant raster will represent the distance in feet to the nearest library:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze314.png)
+Next, you will calculate distances to the nearest school using the same process.  
+Under the raster menu, click on Analysis>Proximity:
+
+Use NYCSchoolRaster as the input file and save the output file as NYCSchoolDistance.tif in the tutorial directory. Make sure to select “geo” for dist units:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze315.png)
 
