@@ -40,6 +40,7 @@ The raster will add to the map.  It may look like a solid field, this is fine.  
 Run the rasterize tool again for the NYC_Schools Layer.  Choose NYC_Schools as the input file. Again, choose the “raster” field as the attribute value. Save the output as NYCSchoolRaster.tif in the shape directory for this exercise. You will have to choose a raster resolution for the output map.  Choose the “raster resolution in map units per pixel” and enter a resolution of 50 units for both the horizontal and vertical options.  Click on the edit![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze39.png) button to edit the GDAL command line and enter the statement “-te 550000 600000 730000 770000” after “gdal_rasterize”:
 
  ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze310.png) 
+ 
  Click OK:
  
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze311.png)
@@ -50,6 +51,7 @@ Under the raster menu, click on Analysis>Proximity:
 Use NYCLibraryRaster as the input file and save the output file as NYCLibraryDistance.tif in the tutorial directory. Make sure to select “geo” for dist units:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze313.png)
+
 You should not need to specify the extent this time as the tool will automatically use the extent of the input file.  Click OK.
 
 The resultant raster will represent the distance in feet to the nearest library:
@@ -61,8 +63,14 @@ Under the raster menu, click on Analysis>Proximity:
 Use NYCSchoolRaster as the input file and save the output file as NYCSchoolDistance.tif in the tutorial directory. Make sure to select “geo” for dist units:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze315.png)
+Click OK: 
+
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze316.png)
+
+Now you will generalize these proximity based rasters into discrete distance classes.  Specifically, you will classify the proximity based rasters into classes of 0-1/4 mile, ¼-½, mile, ½ - ¾ mile and above ¾ mile distances.
+
+Unfortunately there are no simple to use tools for this in QGIS.  You will need to use one of the built in GRASS tools for this. Open the processing toolbar by choosing Toolbox under the processing menu:
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze317.png)
