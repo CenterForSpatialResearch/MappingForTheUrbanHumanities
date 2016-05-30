@@ -110,20 +110,28 @@ We will be creating a number of new layers during this portion of the exercise s
 ![buffer](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/05_Buffer.png)
 
   a. Choose Bronx_Libraries as your input vector layer – this sets which layer the buffers are drawn around. 
+
   b. Set the buffer distance to 1320. Note: the values in this field have the same units as the projection of your input datalayer and map project. Our map is projected in the NAD83 New York State Plane (Long Island) projection system whose units are in feet. To confirm this you can open the layer properties and inspect the coordinate reference system for the layer. Thus we choose 1320 feet because this is equivalent to 1/4 mile. 
-c. Browse in order to save the Output shapefile as ‘BX_Library_QuarterMiBuffer` within your 3_AnalyzingData\Process folder. 
-d. Click `OK`. Then Click `Close`. 
-Your map should look something like the following: 
+
+  c. Browse in order to save the Output shapefile as ‘BX_Library_QuarterMiBuffer` within your 3_AnalyzingData\Process folder. 
+
+  d. Click `OK`. Then Click `Close`. Your map should look something like the following: 
 
 ![location](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/06_Buffer.png)
 
 2. Next we will use the select by location tool to determine which schools fall within ¼ mile of a library. Navigate to `Vector`>`Research Tools`>`Select By Location`
   a. Select features in  `Bronx_Schools` that intersect features in `BX_Library_QuarterMiBuffer`
+
   b. Select OK, and then close. 
+
   c. Open the attribute table of `Bronx_Schools` and notice that 90 schools were selected. Thus there are 90 schools in the Bronx that are within ¼ mile of a library.
+
 3. Now we want to answer our second question:  Which five libraries serve the greatest number of school children? To answer this, we will perform a *spatial join*. 
+
   a. A spatial join is a new tool for us which allows us to summarize the attributes from one layer within the attribute table of another based on the spatial relationship between them. 
+
   b. On your menu navigate to `Vector`>`Data Management`>`Join attributes by location`. 
+
 ![location](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/07_SpatialJoin.png)
 
   c. Just like with a table join the `Target vector layer` is the layer to which we would like to join new information to and the `Join vector layer` is the layer which we are joining to the target layer. In our case BX_Library_QuarteMiBuffer is the `Target vector layer` and Bronx_Schools is the `Join vector layer`
@@ -137,9 +145,13 @@ Your map should look something like the following:
   g. In the Output table options select Keep all records (including non-matching target records), this will ensure that the buffers for which there are no schools are kept in our dataset. 
 
   h. Select `OK`. 
+
   i. A warning box will appear letting you know that a new layer has been created as a result of this spatial join. Click `OK`. Then close the `Join attributes by location` dialogue box.
+
   j. Note that `Library_QuarterMiBuffer_SchoolsJoin` has now been added to your map as a layer. 
+
   k. **Open** the attribute table for this layer. Notice the new field `SUMEnrollment` that has been added on. This field contains the sum of the enrollments for all of the schools within the buffer. 
+
   l. Which five libraries serve the greatest number of enrolled school children. Sort the attribute table by SUMEnrollment and identify the top five libraries. 
 
 ![location](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/08_Enrollment.png)
@@ -155,10 +167,15 @@ Your map should look something like the following:
 
   c. Select `Bronx_Schools` as the `Input point layer`. Set `SCHOOLNAME` as the `Input unique ID field`. The input point layer is the layer that the distance of the target point layer will be measured in relation to. 
   d. Select `Bronx_Libraries` as the `Target point layer` and `facname` as the `Target unique ID field`.
+
   e. For the output matrix type select `Linear (N*kx3) distance matrix`, and select `Use only the nearest (k) target points` and leave this at 1.
+
   f. Browse to save your output distance matrix as `BX_SchoolsNearestLibraries` in the 3_AnalyzingData\Process folder.  
+
   g. Select `Okay`. Then select `Close`
+
   h. In a finder window navigate to the BX_SchoolsNearestLibraries.csv file within your 3_AnalyzingData\Process folder and open it. It should open in Excel. 
+
   i. You will see that we have generated a table where each school is matched with its nearest library and QGIS has computed the distance between them in feet. 
 
 ![location](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/09_DistanceMatrix.png)
@@ -169,7 +186,9 @@ We now have gathered information about how many schools are within ¼ mile of ea
 In order to answer this question we will need to estimate the total population near libraries in the Bronx. We will first use a coarse method of estimation and then we will refine our estimate using a more advanced technique. 
 
 For our first approximation we will ask: how many people live in the census tracts that intersect a ¼ mile buffer around our libraries?
+
 1. We will use the select by location tool to select all of the census tracts that intersect one of our ¼ mile buffers around the libraries.
+
 2. Navigate to `Vector`>`Analysis`>`Select by location`. And make the following selections: 
 
 ![location](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/10_SelectLocation.png)
@@ -179,11 +198,15 @@ For our first approximation we will ask: how many people live in the census trac
 ![location](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/11_Select.png)
 
 5. We can already tell that this will be a very coarse way to estimate the population served by each of the Bronx libraries because some census tracts which intersect our buffers are very large and portions of the tract are very far away from any library. 
+
 6. Despite this we now want to add up the total population within these selected census tracts.  To determine the total population of all of the census tracts that intersect a ¼ mile buffer of a Bronx library. To do this we will use the `Basic statistics` tool. Navigate to  `Vector`>`Analysis`>`Basic Statistics`. Make the following selections and click `OK`. 
+
 ![location](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/12_Statistics.png)
+
 7. We see that the total population of all of the census tracts that intersect a ¼ mile buffer around a Bronx library is 983,821. Make a note of this total we will compare it to the result we get in the next portion of the exercise. 
 
 Now we will refine our estimate of the population near libraries. We will estimate the population that lives precisely within our ¼ mile buffers using using a method called *proportional split estimation*. A proportional split is a way to estimate the proportion of a quantitative attribute that falls within a portion of a polygon’s area. A proportional split is calculated in a few fairly simple steps. 
+
 1. We calculate the area of each polygon unit 
 2. Clip the polygons to the boundary of the study area (in our case the ¼ mile buffers)
 3. Calculate the area of the polygons after clipping them to the study area
