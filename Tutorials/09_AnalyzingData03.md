@@ -161,5 +161,5 @@ The output should add automatically to QGIS:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze336.png)
 
-Note that the raster values now range from 3-13, reflecting the higher weight to the library distances.
+Note that the raster values now range from 4-16, reflecting the higher weight to the library distances.
 
