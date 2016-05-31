@@ -43,10 +43,10 @@ Run the rasterize tool again for the NYC_Schools Layer.  Choose NYC_Schools as t
  
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze311.png)
 
-Next, you will create a proximity based raster layers representing the distances to libraries and schools. First, you will calculate distances to the nearest library.  
-Under the raster menu, click on Analysis>Proximity:
+Next, you will create a proximity based raster layers representing the distances to libraries and schools. First, you will calculate distances to the nearest library.  Under the raster menu, click on Analysis>Proximity:
 
-![AnalyzingData]( https://git
+![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze312.png)
+
 Use NYCLibraryRaster as the input file and save the output file as NYCLibraryDistance.tif in the tutorial directory. Make sure to select “geo” for dist units:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze313.png)
