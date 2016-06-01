@@ -26,7 +26,8 @@ Launch QGIS and open a new map project. Use the `add vector layer` tool and navi
 * 2011_CSA_NY
 * 2011_CBSA_NY
 
-![layers](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/01.png)\
+![layers](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/01.png)
+
 Then use the `add raster layer` tool and navigate to the new folder you’ve just made and add:
 * NLCD_NewYork_2011.tif
 
