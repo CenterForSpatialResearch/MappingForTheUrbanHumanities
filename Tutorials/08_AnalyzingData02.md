@@ -19,7 +19,7 @@ We are also using two different boundaries for New York City’s effective reach
 Further descriptions are available [here](https://www.census.gov/geo/reference/gtc/gtc_cbsa.html). We have provided you with two layers containing the CSA and CBSA boundaries just for New York however the original data for the whole U.S. is available [here](https://www.census.gov/geo/maps-data/data/tiger-line.html).
 
 ####New Downloads
-Download the land cover data clipped to the New York City area [here]( https://drive.google.com/open?id=0B5KywkNXsT4JQ3hkUVI4TTd2b3c).
+Download the land cover data clipped to the New York City area [here](https://drive.google.com/open?id=0B5KywkNXsT4JdXZjOXV1SE1wWjg).
 Create a new folder within Class_Data\3_AnalyzingData called `Raster` and save the `NLCD_NewYork_2011.tif` file there.
 ####Setting up QGIS
 Launch QGIS and open a new map project. Use the `add vector layer` tool and navigate to Class_Data\3_AnalyzingData and add:
@@ -71,7 +71,7 @@ We will define ‘densly built zones’ for the purposes of this analysis as zon
 Thus, in order to answer this question, we will isolate the ‘Developed’ land cover areas and export them to a new raster file. This will allow us to more easily compare these areas with the economic zones defined by the OMB (it will also give us a chance introduce how to use the raster calculator).
 
 In order to isolate the ‘Developed’ areas we will construct an expression in the raster calculator. To open the raster calculator navigate to `Raster`>`Raster Calculator…`
-The outputs of any calculations performed in the raster calculator will be exported as new raster data layers. Thus we need to specify an output layer, we will name this `NLCD_NewYork2011_UrbanAreas` and save it in the 3_AnalyzingData/Process folder. 
+The outputs of any calculations performed in the raster calculator will be exported as new raster data layers. Thus we need to specify an output layer, we will name this `NLCD_NewYork2011_Urban` and save it in the 3_AnalyzingData/Process folder. 
 Double click on the name of the land cover layer in the Raster bands box and use the operators to construct the following expression: `"NLCD_NewYork_2011@1" = 21 OR "NLCD_NewYork_2011@1" = 22 OR "NLCD_NewYork_2011@1" = 23 OR "NLCD_NewYork_2011@1" = 24`
 
 ![calc](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/04.png)
