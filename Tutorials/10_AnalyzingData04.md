@@ -37,8 +37,7 @@ First we will make two density maps: first of libraries and then of schools. The
 each point – the highest value of the surface is exactly above the point and then the values diminish outwards in all directions from there until it reaches a set radial distance at which point all values go to null. The options in the heatmap dialogue box allow us to manipulate the rate at which the values decrease, the distance of the search radius, whether the points are weighted by a value in their attribute table. 
 
 * A few things to note about this dialogue box: 
-* Radius:  the radius specifies the distance around a point at which the influence of the point will be felt. This is also sometimes called the kernel bandwidth. If you choose a small radius then the radius of the raster layer around each point will be smaller and will show a great deal of variation, if you choose a larger radius the impact of the individual points will likely overlap with one another and thus create a smoother surface. 
-
+  * Radius:  the radius specifies the distance around a point at which the influence of the point will be felt. This is also sometimes called the kernel bandwidth. If you choose a small radius then the radius of the raster layer around each point will be smaller and will show a great deal of variation, if you choose a larger radius the impact of the individual points will likely overlap with one another and thus create a smoother surface. 
   * Cell size: this value determines the cell size of the output raster – the size in map units of each individual raster cell. 
   * Kernel shape: this controls the way that the influence of a point decrease as you move away from the point’s location. 
   * Use radius from field: you can determine the radius of the heatmap from a field in the dataset
@@ -64,6 +63,7 @@ Next repeat these steps and use the same parameters but produce a heat map of Ne
 ![heatmap]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData04/05.png)
 * Click `OK`. The result will look like the following: 
 ![heatmap]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData04/06.png)
+
 * What narratives about public schools in New York can this map aid you to create? What does it say about the distribution of schools throughout the five boroughs? Are there clear large clusters? Areas without many schools?
 
 In the next portion of the exercise we will create several additional density maps of schools in New York, each with different parameters, and observe the impact of changing these parameters on the maps we can produce and on the observations which each supports. 
@@ -73,7 +73,9 @@ We will first modify our original density map of schools by weighting schools by
 ![heatmap]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData04/07.png)
 
 * Save your file as `NYC_Schools-Heat_Enrollment_4000-200.tif`. Note we have encoded the radius and cell size into the file name so we can keep track of them for each layer in order to make comparisons. 
+
 * We will choose the same radius and cell size that we used previously, but this time we will click the check-box next to `use weight from field` and we will select `Enrollment` as the field. Our density map will now be weighted by the values in this field.  
+
 * Click `OK`. The result should look like this: 
 
 ![heatmap]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData04/08.png)
@@ -89,5 +91,5 @@ Now we will repeat these same steps but will test several combinations of radius
 3.	Create a new density map of schools with a smaller search radius, 2002 feet, but the same cell size, 200 feet. Name this ` NYC_Schools-Heat_Enrollment_2000-200.tif`
 4.	Create a new density map of schools with a smaller search radius, 2000 feet, and a larger cell size, 1200 feet. Name this ` NYC_Schools-Heat_Enrollment_2000-1200.tif`
 
-What are the key differences between each of them? 
+What are the key differences between each of these density maps? What conclusions would each lead you to make about the spatial patterns of schools in New York City?  
 
