@@ -112,7 +112,7 @@ Working with Census Data
 
 
 **Wednesday, June 1 | Analyzing Data 02**
-Studio@Butler
+300 S Buell Hall
 
 * **Topics**			Creative Geoprocessing | Proportional Split Estimation,
 			Raster Operations,
