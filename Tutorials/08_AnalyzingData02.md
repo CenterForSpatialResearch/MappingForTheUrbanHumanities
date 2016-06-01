@@ -88,6 +88,8 @@ How does the geography of New York’s `developed` land in the land cover data b
 
 To answer this we can compare this new raster data layer with the two economic urban boundaries we first added into our map project. This will be a purely visual comparison. 
 
+Symbolize these three datasets in a manner which will allow you to make comparisons between them. 
+
 ![calc](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/07.png)
 
 What can we say about the relationship between these three modes of defining the urban area of New York City? 
