@@ -20,7 +20,9 @@ Further descriptions are available [here](https://www.census.gov/geo/reference/g
 
 ####New Downloads
 Download the land cover data clipped to the New York City area [here](https://drive.google.com/open?id=0B5KywkNXsT4JdXZjOXV1SE1wWjg).
+
 Create a new folder within Class_Data\3_AnalyzingData called `Raster` and save the `NLCD_NewYork_2011.tif` file there.
+
 ####Setting up QGIS
 Launch QGIS and open a new map project. Use the `add vector layer` tool and navigate to Class_Data\3_AnalyzingData and add:
 * 2011_CSA_NY
