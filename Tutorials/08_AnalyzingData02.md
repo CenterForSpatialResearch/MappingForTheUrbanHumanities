@@ -25,10 +25,13 @@ Create a new folder within Class_Data\3_AnalyzingData called `Raster` and save t
 Launch QGIS and open a new map project. Use the `add vector layer` tool and navigate to Class_Data\3_AnalyzingData and add:
 * 2011_CSA_NY
 * 2011_CBSA_NY
-![layers](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/01.png)
+
+![layers](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/01.png)\
 Then use the `add raster layer` tool and navigate to the new folder you’ve just made and add:
 * NLCD_NewYork_2011.tif
+
 ![layers](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/02.png)
+
 ####Analyzing Raster Data
 
 First we will examine the way that the land cover data is classified. 
@@ -36,6 +39,7 @@ First we will examine the way that the land cover data is classified.
 To do this open the layer properties of the land cover data layer. Under the style tab you’ll notice that the `Render type` is Paletted and that each value in the raster dataset is given a discrete color. However the colors only are applied to certain numeric values. This is because the classifications in the land cover dataset are [encoded](http://www.mrlc.gov/nlcd11_leg.php) through numeric values which describe the land cover type in each 30m by 30m grid cell. 
 
 ![rasterstyle](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/03.png)
+
 The land cover classifications to which these numbers refer are as follows:
 
 * 11. Open Water
@@ -68,15 +72,23 @@ Thus, in order to answer this question, we will isolate the ‘Developed’ land
 In order to isolate the ‘Developed’ areas we will construct an expression in the raster calculator. To open the raster calculator navigate to `Raster`>`Raster Calculator…`
 The outputs of any calculations performed in the raster calculator will be exported as new raster data layers. Thus we need to specify an output layer, we will name this `NLCD_NewYork2011_UrbanAreas` and save it in the 3_AnalyzingData/Process folder. 
 Double click on the name of the land cover layer in the Raster bands box and use the operators to construct the following expression: `"NLCD_NewYork_2011@1" = 21 OR "NLCD_NewYork_2011@1" = 22 OR "NLCD_NewYork_2011@1" = 23 OR "NLCD_NewYork_2011@1" = 24`
+
 ![calc](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/04.png)
+
 Click `OK`.
+
 The result will be added to your map project and will look like this: 
+
 ![calc](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/05.png)
+
 We can consider this new raster layer to describe one boundary of New York --  the zones of highly developed land.
 Again we will return to our research questions:
 How does the geography of New York’s `developed` land in the land cover data base compare with the economic boundaries of New York City as defined by the OMB? 
 
 To answer this we can compare this new raster data layer with the two economic urban boundaries we first added into our map project. This will be a purely visual comparison. 
+
 ![calc](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData02/07.png)
+
 What can we say about the relationship between these three modes of defining the urban area of New York City? 
+
 Create and export a map composition using the print composer. 
