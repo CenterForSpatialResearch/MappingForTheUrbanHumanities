@@ -86,12 +86,16 @@ Expand the GRASS commands in the processing toolbar and then expand the Raster c
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze319.png)
 
-This tool requires that you build a reclass rules file in order to define the classes.  This needs to be a text file containing the needed ranges. Open a text editor (notepad in windows or TextEdit in MacOS will work for this) and type:
+This tool requires that you build a reclass rules file in order to define the classes.  This needs to be a text file containing the needed ranges. Open a text editor (Notepad in Windows or TextEdit in MacOS will work for this) and type:
 
 0 thru 1319.99 = 1
+
 1320 thru 2639.99 = 2
+
 2640 thru 3959.99 = 3
+
 3960 thru 82000 = 4
+
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze320.png)
