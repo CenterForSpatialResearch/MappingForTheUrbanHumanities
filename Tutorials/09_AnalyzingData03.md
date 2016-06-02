@@ -47,7 +47,7 @@ Next, you will create proximity based raster layers representing the distances t
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze312.png)
 
-Use NYCLibraryRaster as the input file and save the output file as NYCLibraryDistance.tif in the tutorial directory. Make sure to select “geo” for dist units:
+Use NYCLibraryRaster as the input file and save the output file as NYCLibraryDistance.tif in the working directory. Make sure to select “geo” for dist units:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze313.png)
 
@@ -60,7 +60,7 @@ The resultant raster will represent the distance in feet to the nearest library:
 Next, you will calculate distances to the nearest school using the same process.  
 Under the raster menu, click on Analysis>Proximity:
 
-Use NYCSchoolRaster as the input file and save the output file as NYCSchoolDistance.tif in the tutorial directory. Make sure to select “geo” for dist units:
+Use NYCSchoolRaster as the input file and save the output file as NYCSchoolDistance.tif in the working directory. Make sure to select “geo” for dist units:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze315.png)
 
@@ -71,7 +71,7 @@ Click OK:
 
 Now you will generalize these proximity based rasters into discrete distance classes.  Specifically, you will classify the proximity based rasters into classes of 0-¼ mile, ¼-½, mile, ½ - ¾ mile and above ¾ mile distances.
 
-Unfortunately there are no simple to use tools for this in QGIS.  You will need to use one of the built in GRASS tools for this. Open the processing toolbar by choosing Toolbox under the processing menu:
+Unfortunately, there are no simple to use tools for this in QGIS.  You will need to use one of the built in GRASS tools for this. Open the processing toolbar by choosing Toolbox under the processing menu:
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze317.png)
