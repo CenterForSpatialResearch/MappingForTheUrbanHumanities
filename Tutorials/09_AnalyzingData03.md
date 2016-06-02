@@ -51,7 +51,7 @@ Use NYCLibraryRaster as the input file and save the output file as NYCLibraryDis
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze313.png)
 
-You should not need to specify the extent this time as the tool will automatically use the extent of the input file.  Click OK.
+You should not need to specify the extent or raster resolution this time as the tool will automatically use the extent and cell size of the input file.  Click OK.
 
 The resultant raster will represent the distance in feet to the nearest library:
 
@@ -120,14 +120,14 @@ Click Run. Again, the result should add automatically to QGIS:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze324.png)
 
-Note that the r.reclass command in QGIS somewhat confusingly names all the output “Reclassified” making it difficult to determine which layer is being referenced.  However, you can change the names in the layer panel by right-clicking on the two “Reclassified” layers and choosing “rename.”  Rename the two layers “ReclassifiedLibrary” and “ReclassifiedSchools” respectively.  
+Note that the r.reclass command in QGIS confusingly names all the output “Reclassified” making it difficult to determine which layer is being referenced.  However, you can change the names in the layer panel by right-clicking on the two “Reclassified” layers and choosing “rename.”  Rename the two layers “ReclassifiedLibrary” and “ReclassifiedSchools” respectively.  
 
 Now you will combine these two reclassified distance rasters into one by adding the two values together.  This can be done in the raster calculator.  Under the raster menu, choose “raster calculator”:
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze325.png)
 
-In the raster calculator, simply add the two layer together. The raster calculator expression should thus be: "ReclassifiedLibrary@1" + "ReclassifiedSchools@1"  Set the output layer as SchoolLibrarylDistanceWeightEqual:
+In the raster calculator, simply add the two layer together. The raster calculator expression should thus be: "ReclassifiedLibrary@1" + "ReclassifiedSchools@1"  Set the output layer as SchoolLibraryDistanceWeightEqual:
 
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze326.png)
@@ -143,7 +143,7 @@ Note that the raster values now range from 2-8, giving an overall measure of pro
 
 The calculation above gives equal weight to both libraries and schools.  You can also run the same calculation but giving greater weight to the libraries. 
  
-One way to do this is by using the raster calculator.  You can essentially triple the influence of the library locations in this model by multipieng the orginal NYCLibraryDistanceReclass rater by three. Open the raster calculator and enter the equation "ReclassifiedLibrary@1" * 3.  SAve the Output as ReclassifiedLibraryTimes3 in your working directory:
+One way to do this is by using the raster calculator.  You can triple the influence of the library locations in this model by multipieng the orginal NYCLibraryDistanceReclass raster by three. Open the raster calculator and enter the equation "ReclassifiedLibrary@1" * 3.  Save the Output as ReclassifiedLibraryTimes3 in your working directory:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze333.png)
 
