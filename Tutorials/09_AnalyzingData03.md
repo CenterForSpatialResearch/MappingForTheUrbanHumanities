@@ -31,11 +31,11 @@ button to edit the GDAL command line.  You can enter the processing extent in th
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze37.png)
 
-The raster will add to the map.  It may look like a solid field, this is fine.  Each library location will appear as a single raster with avalue of one and they may be imperceptable at this extent.
+The raster will add to the map.  It may look like a solid field, this is fine.  Each library location will appear as a single raster with a value of one and they may be imperceptable at this extent.
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze38.png)
 
-Run the rasterize tool again for the NYC_Schools Layer.  Choose NYC_Schools as the input file. Again, choose the “raster” field as the attribute value. Save the output as NYCSchoolRaster.tif in the shape directory for this exercise. You will have to choose a raster resolution for the output map.  Choose the “raster resolution in map units per pixel” and enter a resolution of 50 units for both the horizontal and vertical options.  Click on the edit![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze39.png) button to edit the GDAL command line and enter the statement “-te 550000 600000 730000 770000” after “gdal_rasterize”:
+Run the rasterize tool again for the NYC_Schools Layer.  Choose NYC_Schools as the input file. Again, choose the “raster” field as the attribute value. Save the output as NYCSchoolRaster.tif in the working directory for this exercise. Once again choose the “raster resolution in map units per pixel” option and enter a resolution of 50 units for both the horizontal and vertical options.  Click on the edit![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze39.png) button to edit the GDAL command line and enter the statement “-te 550000 600000 730000 770000” after “gdal_rasterize”:
 
  ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze310.png) 
  
