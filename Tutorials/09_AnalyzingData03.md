@@ -13,20 +13,20 @@ With the Add Vector Layer tool ![AnalyzingData]( https://github.com/CenterForSpa
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze33.png)
 
 These point layers represent primary and secondary schools and public libraries throughout New York City. 
-Since you will be conducting a raster based proximity analysis, you will first convert these point based features to a raster layer.  Under the raster layer, choose conversion>Rasterize.
+Since you will be conducting a raster based proximity analysis, you will first convert these point based features to a raster layer.  Under the raster layer, choose Conversion>Rasterize (Vector to Raster):
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze34.png)
 
-The rasterize window opens:
+The Rasterize (Vector to Raster) window opens:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze35.png)
 
-First, you will convert the libraries to a raster format.  Since you are not mapping any attribute values, choose the “raster” field as the attribute value.  Choose NYC_Libraries as the input file.   Save the output as NYCLibraryRaster.tif in the shape directory for this exercise. You will have to choose a raster resolution for the output map.  Since the datasets are in state plane, with the units expressed in feet, it is intuitive to use the “raster resolution in map units per pixel” option.  Enter a resolution for 50 units (or feet) for both the horizontal and vertical options:
+This tool will convert the libraries to a raster format.  Choose NYC_Libraries as the input file. Choose the “raster” field as the attribute value.  Note, the "raster" variable in the library attribute table has a value of one for each feature, and works somewhat like a dummy variable for creating the binary raster that will be the output.  Save the output as NYCLibraryRaster.tif in the working directory for this exercise. You will have to choose a raster resolution for the output map.  Since the datasets are in state plane, with the units expressed in feet, it is intuitive to use the “raster resolution in map units per pixel” option.  Enter a resolution for 50 units (or feet) for both the horizontal and vertical options:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze36.png)
 
 There is one more step that you need to address before running the tool. For raster analysis you need to define the processing extent for the output file.  In essence, you need to tell the software what area to run the calculation for.  Otherwise, the tool would continue to run for the entire Earth!  By default, the rasterize tool will use the extent of the input file (NYC_Libraries).  This is not a good choice for two reasons.  First, you will want to make sure that your analysis will run for the entire city, even if those areas are outside the library extents.  Second, you want to be sure that all the rasters that you are using for this exercise have the identical extent and resolution. Thus, you must specify the processing extent.
-Unfortunately, there are no automated methods to specify the processing extent in this toll.  You will need to specify it directly into the GDAL command line, the text box in the bottom on the tool. Click on the edit ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze39.png)
+Unfortunately, there are no automated methods to specify the processing extent in this tool.  You will need to specify it directly into the GDAL command line, the text box in the bottom on the tool. Click on the edit ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze39.png)
 button to edit the GDAL command line.  You can enter the processing extent in the line after “gdal_rasterize.”  You will use the “–te” statement to define the extent, this statement takes the form “-te xmin ymin xmax ymax” Enter the statement as follows: “-te 550000 600000 730000 770000”. Your window should look like this:
 
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze37.png)
