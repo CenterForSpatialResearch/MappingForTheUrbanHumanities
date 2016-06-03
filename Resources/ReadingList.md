@@ -60,6 +60,32 @@ Vershbow, Ben (2013): NYPL Labs: Hacking the Library, Journal of Library Adminis
 Wallace, Timothy R. and Charles van den Heuvel. “Truth and Accountability in Geographic and Historical Visualizations.” The Cartographic Journal. 2005, 42(2): 173-181.
 
 
+###Geo Humanities
+
+Spatial Humanities, annotated bibliography: http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=89
+
+Edited by Stephen Daniels, Dydia DeLyser, J. Nicholas Entrikin, and Douglas Richardson. Envisioning Landscapes. Making Worlds: Geography and the Humanities
+
+Buisseret, David (ed.). Envisioning the City: Six Studies in Urban Cartography. Chicago: University of Chicago Press, 1998.
+
+Bodenhamer, David J., John Corrigan, and Trevor M. Harris. The Spatial Humanities: GIS and the Future of Humanities Scholarship. Indiana University Press, 2010.
+
+
+Ethington, Philip J. "Placing the Past: ’Groundwork’ for a Spatial Theory of History." Rethinking History. 11 (2007), 465-494, 2007.
+
+ Harmon, Katherine. You Are Here: Personal Geographies and Other Maps of the Imagination. New York: Princeton Architectural Press, 2004.
+
+Knowles, Anne K. Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship. Redlands, Cal.: ESRI Press. Digital supplement edited by A.Hillier, 2008.
+
+Moretti, Franco. Atlas of the European Novel 1800-1900. London and New York: Verso, 1999.
+
+Schulten, Susan. "The Cartography of Slavery and the Authority of Statistics." Civil War History, vol. 56 no. 1, March 2010.
+
+Wood, Denis. Everything Sings: Maps for a Narrative Atlas. Los Angeles: Siglio, 2010.
+
+Ian N. Gregory and Alistair Geddes, eds., Toward Spatial Humanities: Historical GIS and Spatial History (Bloomington: Indiana University Press, 2014). 
+
+
 ####Textbooks/work books
 [Donnelly, Frank. Introduction to GIS Using Open Source Software. 2015](http://faculty.baruch.cuny.edu/geoportal/resources/practicum/gisprac_2015july_fd.pdf)	
 
@@ -70,4 +96,5 @@ Wallace, Timothy R. and Charles van den Heuvel. “Truth and Accountability in G
 [Graser, Anita. Learning QGIS -- 3rd Edition. 2016](https://www.packtpub.com/big-data-and-business-intelligence/learning-qgis-third-edition)
 
 [Menke, Kurt. Richard Smith Jr., Luigi Pirelli,John Van Hoesen. Mastering QGIS. 2015.](https://www.packtpub.com/application-development/mastering-qgis)
+
 
