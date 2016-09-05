@@ -140,3 +140,8 @@ I looked at this location on the map to see if it identified a post office.  It 
 ![GeocodingExercise](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData02/Geocode37.png)
 
 Looking at the attribute table in the Google results, there is an “addrolocat” field which gives some indication of how Google identified the location.  In most cases this is indicated as “street_address” but there are other entries like “premise” and “subpremise.”  For the PO Box, the entry is “administrative_area_level_2” which is a bit mysterious.  On closer inspection, it does not even seem to be in the 10451 zip code.  After some investigation, this turns out to be the location that Google uses as “The Bronx,” it is apparently a centroid calculation for the entire county and a location that is used for locations that cannot be identified at a more granular level.
+
+______________________________________________________________________________________________________________
+
+Tutorial written by Eric Glass, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2016 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).
+
