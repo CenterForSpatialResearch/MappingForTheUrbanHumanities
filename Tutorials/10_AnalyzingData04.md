@@ -9,6 +9,9 @@ We will create a density map to do this – this is a very common type of map th
 
 The density map will help us to see whether there are clear concentrations of schools and libraries, at the same time we will create several maps using different parameters in order to explore how subjective these maps are and how many different narratives can come from them.
 
+####Before you begin
+If you haven't already, download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
+
 ##### Adding the Data Layers
 
 **Launch** QGIS
@@ -16,7 +19,7 @@ The density map will help us to see whether there are clear concentrations of sc
 Select the `add vector layer` button and navigate to MappingfortheUrbanHumanities/Class_Data/3_AnalyzingData and open: 
 * NYC_Libraries.shp
 * NYC_Schools.shp
-* NYC_Tracts.shp (this is just to provide us with some context).
+* NYC_Tracts_2014.shp (this is just to provide us with some context).
 * if you would like you can download a shapefile containing the water bodies and rivers for New York [here](http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=928) which will help give greater context to our map. 
 
 ![layers]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData04/01_Layers.png)
@@ -93,3 +96,7 @@ Now we will repeat these same steps but will test several combinations of radius
 
 What are the key differences between each of these density maps? What conclusions would each lead you to make about the spatial patterns of schools in New York City?  
 
+
+______________________________________________________________________________________________________________
+
+Tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2016 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).

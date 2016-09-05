@@ -18,6 +18,9 @@ We are also using two different boundaries for New York City’s effective reach
 
 Further descriptions are available [here](https://www.census.gov/geo/reference/gtc/gtc_cbsa.html). We have provided you with two layers containing the CSA and CBSA boundaries just for New York however the original data for the whole U.S. is available [here](https://www.census.gov/geo/maps-data/data/tiger-line.html).
 
+####Before you begin
+If you haven't already, download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
+
 ####New Downloads
 Download the land cover data clipped to the New York City area [here](https://drive.google.com/open?id=0B5KywkNXsT4JdXZjOXV1SE1wWjg).
 
@@ -97,3 +100,8 @@ Symbolize these three datasets in a manner which will allow you to make comparis
 What can we say about the relationship between these three modes of defining the urban area of New York City? 
 
 Create and export a map composition using the print composer. 
+
+______________________________________________________________________________________________________________
+
+Tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2016 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).
+

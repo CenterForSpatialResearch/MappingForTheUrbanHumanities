@@ -6,7 +6,8 @@
 We will now zoom in to the level of the continent and examine population along historical rail lines. We are interested in investigating population growth in counties that contain rail lines between 1850 and 1870. In addition, we will learn about projection systems and will observe the impact that changing projection systems has on spatial analysis by comparing population density calculated under different projection systems.   
 
 ####New Downloads Before We Begin
-**Before we begin the tutorial download `Counties_1870_Albers_PopJoin-1.zip` from [this link](https://drive.google.com/file/d/0B5KywkNXsT4JMFkzdlR1Vl9KVk0/view?usp=sharing)**. Save this in the Class_Data\1_MappingData\Shape folder. 
+
+If you haven't already, download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
 
 ####The Data
 
@@ -222,4 +223,7 @@ Because we have gone over the basics of using the print composer in Mapping Data
 
 ![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData02/PopulationbyCounty_UTM.png)
 
+______________________________________________________________________________________________________________
+
+Tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2016 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).
 

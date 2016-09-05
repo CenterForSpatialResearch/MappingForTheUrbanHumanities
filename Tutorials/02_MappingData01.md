@@ -4,7 +4,7 @@
 
 ####Premise
 
-We will work with the basemap we made in Mapping Data 00 and add new data to it in order to examine multiple measures of world population. We will examine population aggregated to cities and countries and a raster dataset that depicts the distribution of world population at a resolution of approximately 1km. 
+We will work with the basemap we made in Mapping Data 00 and add new data to it in order to examine multiple measures of world population. If you have not already completed the [Mapping data 00](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/01_MappingData00.md) tutorial please do so before beginning this exercise. We will examine population aggregated to cities and countries and a raster dataset that depicts the distribution of world population at a resolution of approximately 1km. 
 
 Open your MappingData_Population.qgs map project.
 
@@ -19,7 +19,7 @@ The data we are using about populated places is aggregated by [Natural Earth v. 
 Country-level population data was published by the [United Nations Population Division](http://esa.un.org/unpd/wpp/Download/Standard/Population/) in 2010. All figures are reported in thousands, i.e., if the population field says 7,000 in the dataset this equals 7,000,000 inhabitants. We have provided a cleaned version of this dataset but the original can be downloaded [here](http://esa.un.org/unpd/wpp/Download/Standard/Population/). 
 
 ####Downloads
-In addition to the data files you have downloaded already you will need to download the Gridded Population of the World raster dataset [here](https://drive.google.com/file/d/0B5KywkNXsT4JYlZGd1lReUVyYVk/view?usp=sharing). Please create a new folder in your Class_Data\MappingData directory called Raster and save the GriddedPop.zop file there. Once it has downloaded unzip the file so that we can use its contents. 
+In addition to the data files you have downloaded already you will need to download the Gridded Population of the World raster dataset [here](https://drive.google.com/file/d/0B5KywkNXsT4JYlZGd1lReUVyYVk/view?usp=sharing). Please create a new folder in your Class_Data\MappingData directory called Raster and save the GriddedPop.zip file there. Once it has downloaded unzip the file so that we can use its contents. 
 
 ####Setting up QGIS
 Open your MappingData_Population.qgs file. 
@@ -215,3 +215,8 @@ Last we will add two text boxes, one with a title for the map and another with a
 Finally use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG. 
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/Mapping_WorldPopulation.png)
+
+______________________________________________________________________________________________________________
+
+Tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2016 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).
+

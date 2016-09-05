@@ -172,6 +172,6 @@ Studio@Butler
 **Friday, June 10 | Syllabus Development & Practicum**
 300 S Buell Hall
 	
-* Debrief and discussion of course outcomes with Laura Kurgan, Director CSR, and Sharon Marcus, Dean of Humanities and Orlando Harriman Professor of English and Comparative Literature.	
+* Debrief and discussion of course outcomes with Laura Kurgan, Director CSR, and Sharon Marcus, Dean of Humanities and Orlando Harriman Professor of English and Comparative Literature.
 
 

@@ -3,7 +3,10 @@
 ###Premise
 You will return to the analysis of schools and libraries we were conducting in Part One of this exercise, however, you will now use raster analysis tools to answer similar questions through slightly different means and for the entirety of New York City. You want to know which parts of New York City have the greatest access to schools and libraries. You will answer this using a raster-based decision map.
 
-#### Topics/Steps
+####Before you begin
+If you haven't already, download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
+
+#### Let's begin
 
 Open QGIS:
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze31.png)
@@ -166,4 +169,10 @@ The output should add automatically to QGIS:
 ![AnalyzingData]( https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData03/Analyze336.png)
 
 Note that the raster values now range from 4-16, reflecting the higher weight to the library distances.
+
+
+______________________________________________________________________________________________________________
+
+Tutorial written by Eric Glass, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2016 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).
+
 
