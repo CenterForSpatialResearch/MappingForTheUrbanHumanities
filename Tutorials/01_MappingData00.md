@@ -1,6 +1,6 @@
 ##Mapping Data 
 
-With this exercise, you will learn introductory skills involved in using ArcGIS to map existing spatial datasets. After the completion of this set of exercises, you should have…
+With this exercise, you will learn introductory skills involved in using QGIS to map existing spatial datasets. After the completion of this set of three Mapping Data exercises, you should have…
 
 1. become familiar with the QGIS user interface 
 2. learned the components of shapefiles 
@@ -9,11 +9,10 @@ With this exercise, you will learn introductory skills involved in using ArcGIS 
 5. created and calculated new fields in an attribute table 
 6. performed a table join to combine additional data to an existing shapefile’s attribute table 
 7. queried a GIS dataset, using both tabular queries and spatial queries 
-8. accessed the metadata of an existing GIS dataset
-9. worked with projections and examined the impacts of projection transformations on spatial analysis
+8. worked with projections and examined the impacts of projection transformations on spatial analysis
 
 ####Part 00
-Download the GitHub repository for this course. The Class_Data folder will then have all of the datasets needed for tutorials. 
+Download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
 
 ###Mapping Data 00: Mapping World Population(s)
 ####Premise

@@ -8,11 +8,12 @@ In this exercise, you will explore some of the georeferencing tools available in
 
 ####Notes on the data: 
 
-The map you will be using for this exercise is one sheet of six from "Map or plan of that part of the Borough of the Bronx, City of New York, lying easterly of the Bronx River" published in 1902.  This map is from the Columbia Map collection and is an exceptionally detailed, large scale (1:7,200) series made shortly after the area east of the Bronx River was annexed from Westchester to the Bronx, and the Bronx was consolidated into New York City and New York County.  The library catalog record for the map can be found [here] (https://clio.columbia.edu/catalog/9282162).  If you would like to see the entire map, there is another copy (in a lower resolution) in the New York Public Libraries digital collections [here] (http://digitalcollections.nypl.org/items/dc910ee0-4682-0131-4759-58d385a7bbd0)
+The map you will be using for this exercise is one sheet of six from "Map or plan of that part of the Borough of the Bronx, City of New York, lying easterly of the Bronx River" published in 1902.  This map is from the Columbia Map collection and is an exceptionally detailed, large scale (1:7,200) series made shortly after the area east of the Bronx River was annexed from Westchester to the Bronx, and the Bronx was consolidated into New York City and New York County.  The library catalog record for the map can be found [here](https://clio.columbia.edu/catalog/9282162).  If you would like to see the entire map, there is another copy (in a lower resolution) in the New York Public Libraries digital collections [here](http://digitalcollections.nypl.org/items/dc910ee0-4682-0131-4759-58d385a7bbd0)
 
-You are going to use [OpenStreetMap] (https://www.openstreetmap.org/about) (OSM)  as reference data for the georeferencing process.  OSM provides a free, open-source map of the world from public domain and volunteered data.
+You are going to use [OpenStreetMap](https://www.openstreetmap.org/about) (OSM)  as reference data for the georeferencing process.  OSM provides a free, open-source map of the world from public domain and volunteered data.
 
-
+####Before you begin
+If you haven't already, download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
 
 ####Setting up QGIS
 
@@ -113,3 +114,10 @@ Compare the georeferenced map with the Open Street Map layer.  Make sure that fe
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef33.png)
 
 In the next exercise you will be using the sheet you georeferenced here and digitizing some of the features from it. 
+
+
+______________________________________________________________________________________________________________
+
+Tutorial written by Eric Glass, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2016 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).
+
+
