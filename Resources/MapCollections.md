@@ -5,7 +5,7 @@ The following are a few links to major resources for seaching digitized historic
 **Places to Start**
 
 * Columbia University Libraries, especially the [Digitial Social Sciences Center,](http://library.columbia.edu/locations/dssc/data/service.html) at Lehman Library
-	* The DSSC is the home of the Lehman Map Collection
+	* The DSSC is the home of the [Lehman Map Collection](http://library.columbia.edu/locations/maps/about.html)
 	* [GeoData @ Columbia](http://geodata.cul.columbia.edu) is a tool for searching Columbia's spatial data holdings including historical maps, by location. 
 
 * Other University libraries often maintain listings of good online historical map resources
