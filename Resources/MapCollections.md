@@ -18,6 +18,8 @@ The following are a few links to major resources for seaching digitized historic
 
 * [Norman B Leventhal Map Center](http://maps.bpl.org)
 
+* [U.S. Library of Congress](https://www.loc.gov/maps/collections/)
+
 * [Afriterra](http://www.afriterra.org)
 
 * [Old Maps Online](http://www.oldmapsonline.org)
