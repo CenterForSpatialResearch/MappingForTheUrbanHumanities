@@ -1,6 +1,6 @@
-##Reading List
+## Reading List
 
-####Critical Approaches in GIS 
+#### Critical Approaches in GIS 
 
 Abrams, Janet, and Peter Hall eds. Else/where: mapping new cartographies of networks and territories. Minneapolis, MN : University of Minnesota Design Institute, 2006.
 
@@ -60,7 +60,7 @@ Vershbow, Ben (2013): NYPL Labs: Hacking the Library, Journal of Library Adminis
 Wallace, Timothy R. and Charles van den Heuvel. “Truth and Accountability in Geographic and Historical Visualizations.” The Cartographic Journal. 2005, 42(2): 173-181.
 
 
-###Geo Humanities
+### Geo Humanities
 
 Spatial Humanities, annotated bibliography: http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=89
 
@@ -86,7 +86,8 @@ Wood, Denis. Everything Sings: Maps for a Narrative Atlas. Los Angeles: Siglio, 
 Ian N. Gregory and Alistair Geddes, eds., Toward Spatial Humanities: Historical GIS and Spatial History (Bloomington: Indiana University Press, 2014). 
 
 
-####Textbooks/work books
+#### Textbooks/work books
+
 [Donnelly, Frank. Introduction to GIS Using Open Source Software. 2015](http://faculty.baruch.cuny.edu/geoportal/resources/practicum/gisprac_2015july_fd.pdf)	
 
 [Sutton, Tim, Rüdiger Thiede, Horst Düster, Marcelle Sutton. QGIS Training Manual.](http://docs.qgis.org/2.2/en/docs/training_manual/)

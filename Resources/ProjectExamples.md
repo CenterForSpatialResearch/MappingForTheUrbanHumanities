@@ -1,4 +1,4 @@
-##A very small selection of geo humanities project examples 
+## A very small selection of geo humanities project examples 
 
 1. [“Digital Harlem.”](http://digitalharlem.org) Shane White, Stephen Garton, Graham White and Stephen Robertson.  
 

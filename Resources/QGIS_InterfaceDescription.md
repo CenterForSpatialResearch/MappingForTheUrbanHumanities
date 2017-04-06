@@ -1,4 +1,4 @@
-##The QGIS Interface
+## The QGIS Interface
 
 This is a brief description of the main elements of the QGIS interface. 
 The QGIS Interface

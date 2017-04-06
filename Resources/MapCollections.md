@@ -1,4 +1,4 @@
-##A few resources for researching digitized map collections
+## A few resources for researching digitized map collections
 
 The following are a few links to major resources for seaching digitized historic map collections.
 
