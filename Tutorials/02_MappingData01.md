@@ -1,8 +1,8 @@
-##Mapping Data 
+## Mapping Data 
 
-###Mapping Data 01: Mapping World Population(s) to understand the difference between multiple methods of measuring world population 
+### Mapping Data 01: Mapping World Population(s) to understand the difference between multiple methods of measuring world population 
 
-####Premise
+#### Premise
 
 We will work with the basemap we made in Mapping Data 00 and add new data to it in order to examine multiple measures of world population. If you have not already completed the [Mapping data 00](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/01_MappingData00.md) tutorial please do so before beginning this exercise. We will examine population aggregated to cities and countries and a raster dataset that depicts the distribution of world population at a resolution of approximately 1km. 
 
@@ -10,7 +10,7 @@ Open your MappingData_Population.qgs map project.
 
 We have already mapped the locations of populated places (which contains population estimates collected using [LandScan](http://web.ornl.gov/sci/landscan/)) as well as country polygons. We also have tabular data available for population at the country level from the [United Nations](http://esa.un.org/unpd/wpp/Download/Standard/Population/) which we will join to the country polygons, as well as a raster layer that describes world population in 1km grid created by CEISIN. We will answer questions about the differences between the depictions of population at the city, country, and 1km scale. 
 
-####Notes on the data: 
+#### Notes on the data: 
 
 The Gridded Population of the World describes the distribution of population across the planet and is not explicitly linked to geopolitical boundaries. It is created by Columbia’s Center for International Earth Science Information Network (CIESIN) through compiling census surveys from all over the world. You will be prompted to download a version of it in the Mollweide projection (more on projection systems later...) in the next section. The original data is downloadable [here](http://beta.sedac.ciesin.columbia.edu/data/set/gpw-v4-population-count/data-download), the data is free to download however you will need to create an account to access it. 
 
@@ -18,10 +18,10 @@ The data we are using about populated places is aggregated by [Natural Earth v. 
 
 Country-level population data was published by the [United Nations Population Division](http://esa.un.org/unpd/wpp/Download/Standard/Population/) in 2010. All figures are reported in thousands, i.e., if the population field says 7,000 in the dataset this equals 7,000,000 inhabitants. We have provided a cleaned version of this dataset but the original can be downloaded [here](http://esa.un.org/unpd/wpp/Download/Standard/Population/). 
 
-####Downloads
+#### Downloads
 In addition to the data files you have downloaded already you will need to download the Gridded Population of the World raster dataset [here](https://drive.google.com/file/d/0B5KywkNXsT4JYlZGd1lReUVyYVk/view?usp=sharing). Please create a new folder in your Class_Data\MappingData directory called Raster and save the GriddedPop.zip file there. Once it has downloaded unzip the file so that we can use its contents. 
 
-####Setting up QGIS
+#### Setting up QGIS
 Open your MappingData_Population.qgs file. 
 It should still contain the countries polygons and populated places points we added previously. (*Note* if these layers are not immediately visible then **right click** on the name of either layer in the `Layer` menu and click `Zoom To Layer`). We will first add CEISIN’s Gridded Population of the World to our map project. Then we will add a tabular data file containing population by country for 2010. This is the information we will join to the countries polygons. 
 
@@ -39,7 +39,7 @@ Then in the dialog box which opens browse to the MappingData\Tabular folder and 
 
 ![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/09_Attributexls.png)
 
-####Performing a Table Join
+#### Performing a Table Join
 In order to answer questions about world population by country we will join tabular data published by the United Nations to the country polygons we have already mapped. A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.  
 
 We have already cleaned the TotalPopulation_Countries.csv file and removed additional rows included in the original dataset that we will not need for our purposes here. In addition, we have abbreviated the column names and reformatted them so that they can be read by QGIS. In future exercises we will cover in depth how to clean, format, and save data so that it can be read by QGIS.  
@@ -81,7 +81,7 @@ In order to permanently incorporate the population estimates into a shapefile of
 
 This new layer will then be added to the map and will contain the population estimates that we joined from the UN tabular data. 
 
-####Attribute Tables and Data Querying
+#### Attribute Tables and Data Querying
 
 Now that we have assembled these data layers we can begin to ask a few simple questions about the different measures of world population that each depicts. We will accomplish this by querying the attribute fields of our two vector layers, the populated places and the countries. To do this we will select features using an expression which is sometimes referred to as Select by Attributes. In addition we will use 
 
@@ -120,7 +120,7 @@ We will now save those 215 cities as a separate shapefile, just like we did for 
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/18_Deselect.png)
 
-####Select by location
+#### Select by location
 
 As we outlined above  we are interested in finding out how many countries have fewer than seven million inhabitants, and then how many cities with over two million inhabitants fall within those boundaries.  In order to answer these two questions we will need to perform a spatial query by layering these two datasets rather than merely querying within the attribute table of one dataset. 
 
@@ -136,7 +136,7 @@ In the bottom left hand corner of your QGIS window you will see that five popula
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/20_SelectedFeatures.png)
 
-####Symbolizing World Populations
+#### Symbolizing World Populations
 
 Now that we have these three different layers we can begin to create maps that highlight the differences between these different ways to measure population. We will compose a map that symbolizes each of our three data layers differently. We will use graduated symbols to express city population, a choropleth map for population by country and a classified color ramp for the gridded population. We will then go over cartographic conventions adding a legend and scale bar to the map and exporting as a PDF. 
 
@@ -183,7 +183,7 @@ Now change the `Render type` to `Singleband pseudocolor` to get something simila
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/24_Pseudo.png)
 
-####Designing a map
+#### Designing a map
 In order to present these three types of population measures we will now compose a map layout and become familiar with the QGIS map composer. The map composer allows you to add a legend, north arrow and scale bar to the map as well as to export our work as a PDF. 
 
 Create a map composition where all three depictions of world populations are values. You can adjust the transparency of your data layers using the style menu. Experiment with changing the colors of the different layers to become more familiar with the style menus for raster and vector layers. 

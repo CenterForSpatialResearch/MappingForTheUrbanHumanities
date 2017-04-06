@@ -1,21 +1,21 @@
-##Mapping Data 
+## Mapping Data 
 
-###Mapping Data 02: Mapping Projections and Population Density
+### Mapping Data 02: Mapping Projections and Population Density
 
-####Premise
+#### Premise
 We will now zoom in to the level of the continent and examine population along historical rail lines. We are interested in investigating population growth in counties that contain rail lines between 1850 and 1870. In addition, we will learn about projection systems and will observe the impact that changing projection systems has on spatial analysis by comparing population density calculated under different projection systems.   
 
-####New Downloads Before We Begin
+#### New Downloads Before We Begin
 
 If you haven't already, download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
 
-####The Data
+#### The Data
 
 We will be working with data created and published by the University of Nebraska Lincoln of historic rail networks in the U.S. We have two shapefiles, one for rail lines built as of 1850, and another for those built as of 1870. We have already included the data in the Mapping Data folder however it is available [here](http://railroads.unl.edu/resources/) for download.  
 
 In addition, we will use historic census information for population by county which has been digitized, aggregated and published by the Minnesota Population Center at the University of Minnesota as part of their [National Historic Geographic Information System (NHGIS)](https://nhgis.org) project. This project is an amazing resource for historical research. We will be using population values for counties from the USA wide agricultural census of 1850 and of 1870 to match with the dates of our rail lines. We have already downloaded the data that we will be using however for future reference we have included brief instructions for how to download data from NHGIS at the beginning of the tutorial. 
 
-####Downloading Data from NHGIS
+#### Downloading Data from NHGIS
 This section is already completed for you and the data is downloaded in the MappingData\Tabular and MappingData\Shape folders respectively however this brief tutorial goes over the basics of downloading data from the NHGIS for future work. 
 
 We will go through the steps for searching for and downloading historical census data and associated GIS boundary files. As an example we will download 1850 population by county along with the 1850 country boundary shapefile which we can associate the population information with through a table join.   
@@ -62,7 +62,7 @@ When the data is ready for download its status will be listed as complete and yo
 
 Your next step will be to join the table of population data to the county boundary shapefile. We will go through this together below. 
 
-####Preparing your data
+#### Preparing your data
 **Performing a Table Join**
 
 The 1850 and 1870 population data that we will be working with is in tabular form and thus we will then need to join his data to county boundary polygons in order to analyze and represent it spatially. We have already performed one table join in the previous exercise, so this will be review. We will only do this for 1850, we have provided you with a shapefile of counties in 1870 with population data already joined to them. 
@@ -114,7 +114,7 @@ Do not change the selected coordinate system. We will do this next.
 
 **Save** your map project.
 
-####Using the Identify Features tool
+#### Using the Identify Features tool
 Before we experiment with applying different projection systems to our data, lets use the identify features tool in order to look at population change along rail lines between 1850 and 1870. This tool allows us to examine attribute values for a specific feature without opening the attribute table. It complements the ability to select a feature by attributes and by location which we covered in the previous exercise.
 Choose a county that had a train line by 1850 (and still had one in 1870), and determine the size of its population in 1850 and then in 1870. You can do this for several counties. Select the identify features tool in the top menu.   
 
@@ -128,7 +128,7 @@ Note the 1850 population in your selected county then select US_county_1870_Albe
 
 ![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData02/10_IdentifyChicago.png)
 
-####Working with Projections
+#### Working with Projections
 
 We will now explore several projection systems and assess the impacts that re-projecting our data has on the shape of our map as well as on calculations such as area and population density. 
 
@@ -177,7 +177,7 @@ Specifically, we will ask, what were the ten densest counties in 1870, and compa
 
 ![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData02/13_SaveAsUTM.png)
 
-####Using the field calculator 
+#### Using the field calculator 
 
 Next open the attribute table of US_county_1870_UTM10_PopJoin. Notice the Dens_AlbKm field. This stands for population density per square kilometer calculated using the Albers projection. We will now calculate a similar field by under the UTM Zone 10 projection in order to compare these two and notice the impact of the change in area on population density. 
 
@@ -199,7 +199,7 @@ Now click the toggle editing mode to save the new field. Sort the attribute tabl
 
 Close the attribute table. 
 
-####Expressing differences in population density in a choropleth map
+#### Expressing differences in population density in a choropleth map
 
 Next we’ll create two choropleth maps which highlight the differences between these two calculations of population density. One for the Albers population density and the other for the UTM Zone 10 Population Density. 
 

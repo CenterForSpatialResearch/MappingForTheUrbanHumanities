@@ -1,4 +1,4 @@
-##Analyzing Data
+## Analyzing Data
 
 Through this exercise you will learn key tools of analysis using QGIS. After completing these exercises you should be able to…
 
@@ -11,12 +11,12 @@ Through this exercise you will learn key tools of analysis using QGIS. After com
 * Develop a raster based decision mapping methodology to answer a specific question
 * Adapt a raster dataset to your own research needs through raster re-classification
 
-###Analyzing Data 01: Libraries, Education, and Language
+### Analyzing Data 01: Libraries, Education, and Language
 
-####Premise
+#### Premise
 We are interested in looking at libraries in the Bronx as a public resource. We will use proximity based measures to the zones of impact (and potential impact) of libraries on Bronx residents from a number of different perspectives. First we want to evaluate which library branches are located within areas that have a high number of Spanish speaking residents. Then we will evaluate which libraries serve the greatest number of school children.  
 
-####Research questions:
+#### Research questions:
 * Where are Bronx Library branches?
 * Which Library branch locations are within areas with a high number of Spanish speaking residents?
 * How many public schools are located within 1/4 mile of a library?
@@ -24,24 +24,27 @@ We are interested in looking at libraries in the Bronx as a public resource. We 
 * What is the nearest library to each school?
 * How many people do these libraries serve?
 
-####The Strategy
+#### The Strategy
 To evaluate the confluence of Spanish speakers and branch libraries we will first select using an expression and then select by area to identify which libraries fall in census tracts with a high percentage of Spanish speakers. 
 
 Then to evaluate which libraries serve the greatest number of school children we will first create a buffer around each library location of ½ mile (which we will be able to export as its own layer to display on our map). We will then use a spatial join in order to count the number of schools within ½ mile of a library and to determine the number of students enrolled in those schools.
 
-####Let’s Begin
+#### Before you begin
+If you haven't already, download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
+
+#### Let’s Begin
 
 **Launch** QGIS. 
 
-Select the `add vector data` button and navigate to the MappingfortheUrbanHumanities\Class_Data\AnalyzingData|Shape folder and add the following three Layers: 
-* Bronx_Tracts.shp
+Select the `add vector data` button and navigate to the MappingfortheUrbanHumanities\Class_Data\AnalyzingData\Shape folder and add the following three Layers: 
+* Bronx_Tracts_2014.shp
 * Bronx_Schools.shp
 * Bronx_Libraries.shp
 
 ![add](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/01_Layers-.png)
 First **open** the attribute tables of each data layer and inspect its contents. 
 
-The field names for `Bronx_Tracts` are: 
+The field names for `Bronx_Tracts_2014` are: 
 * `STATEFP’: the State FIPS code
 * `COUNTYFP`: the county FIPS code
 * `TRACTCE`: the FIPS code for the census tract
@@ -77,7 +80,7 @@ The field names for `Bronx_Schools` are:
 * `Raster`: again ignore this field for now
 **Save** your map project as `AnalyzingData01` within the MappingfortheUrbanHumanities\Tutorials section.
 
-####Finding libraries near concentrations of Spanish speakers
+#### Finding libraries near concentrations of Spanish speakers
 
 Now, we want to determine which libraries are located within census tracts where more than 65% of the population speaks Spanish. We are interested in determining which libraries might be well suited to receive additional resources to go towards multilingual programs.
 
@@ -97,7 +100,7 @@ This analysis give us a very rough sense of which libraries might already serve 
 
 **Save** your map project
 
-####Schools and Libraries 
+#### Schools and Libraries 
 Now we will depart from questions about language and instead ask a series of questions about the relationship between schools and libraries in the Bronx. Specifically we will ask: 
 * How many schools are within 1/4 mile of Bronx libraries? 
 * How many students are enrolled in schools that are within ¼ mile of a Bronx library? 
@@ -106,7 +109,7 @@ Now we will depart from questions about language and instead ask a series of que
 To answer the first question, we will create a 1/4 mile buffer around the libraries.
 
 We will be creating a number of new layers during this portion of the exercise so in order to save all of these layers produced in the process of our analysis lets first create a new folder within the MappingfortheUrbanHumanities/Class_Data/3_AnalyzingData folder and name it `Process`. Save all new layers created during this exercise in this folder. 
-#####Creating Buffers
+##### Creating Buffers
 * On your menu bar navigate to `Vector`>`Geoprocessing Tools` > `Buffer(s)`.
 ![buffer](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/05_Buffer.png)
 
@@ -159,7 +162,7 @@ We will be creating a number of new layers during this portion of the exercise s
 
 **Save** your map project
 
-#####Using a Distance Matrix
+##### Using a Distance Matrix
 
 *  Now we will move on to answer our third question: which is the nearest library to each public school? 
   *  To answer this question we will again introduce a new tool of analysis, `DistanceMatrix` tool. This tool takes two point layers and computes the linear distance between each feature in both layers.
@@ -181,7 +184,7 @@ We will be creating a number of new layers during this portion of the exercise s
 
 ![location](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/09_DistanceMatrix.png)
 
-#####Making Estimates 
+##### Making Estimates 
 We now have gathered information about how many schools are within ¼ mile of each library, as well as the total number of children enrolled in those schools and we have also computed the nearest library to each school. Now we would like to determine more generally how many people live near libraries in the Bronx – i.e. how many people do Bronx libraries serve? 
 
 In order to answer this question we will need to estimate the total population near libraries in the Bronx. We will first use a coarse method of estimation and then we will refine our estimate using a more advanced technique. 
@@ -267,3 +270,8 @@ Now we will compare the total estimated population within the buffers to the ori
 * Navigate to `Vector`>`Analysis`>`Basic Statistics`.
 * Select Pop2014_es as the Target field and note the Sum: 371,042.94 
 * Repeat for the population field for the entire census tract Pop2014 and note the difference: 983,821
+
+______________________________________________________________________________________________________________
+
+Tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2016 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).
+

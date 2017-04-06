@@ -1,12 +1,12 @@
-##Making Data 
+## Making Data 
 
-###Making Data 02: Digitizing Features from a georeferenced map
+### Making Data 02: Digitizing Features from a georeferenced map
 
-####Premise
+#### Premise
 
 In this exercise, you will explore some of the on-screen hand digitizing tools available in QGIS and use them to digitize trees, paths and other features from a georeferenced map.  In essence, you will be converting raster spatial data into vector based features.
 
-####Notes on the data: 
+#### Notes on the data: 
 
 The map you will be using for this exercise is the map sheet from "Map or plan of that part of the Borough of the Bronx, City of New York, lying easterly of the Bronx River" that you georeferenced in the previous exercise. If you have not already done so please complete the [Making Data 01](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/04_MakingData01.md) exercise. 
 

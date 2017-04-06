@@ -1,9 +1,9 @@
-###Analyzing Data 03: Schools, Libraries and Raster Analysis
+### Analyzing Data 03: Schools, Libraries and Raster Analysis
 
-###Premise
+### Premise
 You will return to the analysis of schools and libraries we were conducting in Part One of this exercise, however, you will now use raster analysis tools to answer similar questions through slightly different means and for the entirety of New York City. You want to know which parts of New York City have the greatest access to schools and libraries. You will answer this using a raster-based decision map.
 
-####Before you begin
+#### Before you begin
 If you haven't already, download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
 
 #### Let's begin

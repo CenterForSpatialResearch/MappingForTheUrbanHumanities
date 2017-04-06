@@ -1,7 +1,7 @@
-##Analyzing Data
+## Analyzing Data
 
-###Analyzing Data 04: Schools, Libraries and Density Mapping
-####Premise
+### Analyzing Data 04: Schools, Libraries and Density Mapping
+#### Premise
 
 In Part Three of this exercise we analyzed which areas of New York have the greatest access to libraries, now we are interested in answering a slightly different question: which areas have the highest concentration of libraries? Which have the highest concentration of schools? 
 
@@ -9,7 +9,7 @@ We will create a density map to do this – this is a very common type of map th
 
 The density map will help us to see whether there are clear concentrations of schools and libraries, at the same time we will create several maps using different parameters in order to explore how subjective these maps are and how many different narratives can come from them.
 
-####Before you begin
+#### Before you begin
 If you haven't already, download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
 
 ##### Adding the Data Layers

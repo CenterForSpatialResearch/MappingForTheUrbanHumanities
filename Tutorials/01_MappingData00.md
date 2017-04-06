@@ -1,4 +1,4 @@
-##Mapping Data 
+## Mapping Data 
 
 With this exercise, you will learn introductory skills involved in using QGIS to map existing spatial datasets. After the completion of this set of three Mapping Data exercises, you should have…
 
@@ -11,11 +11,11 @@ With this exercise, you will learn introductory skills involved in using QGIS to
 7. queried a GIS dataset, using both tabular queries and spatial queries 
 8. worked with projections and examined the impacts of projection transformations on spatial analysis
 
-####Part 00
+#### Part 00
 Download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
 
-###Mapping Data 00: Mapping World Population(s)
-####Premise
+### Mapping Data 00: Mapping World Population(s)
+#### Premise
 We are interested in creating a map of world countries and cities (and at the same time exploring the QGIS interface). We have a point file for the locations of populated places around the world as well as a polygon file for country boundaries. This map will serve as a basemap to which we can add additional information and layers in order to examine multiple measures of population and the differences between them.
 ####Setting up QGIS
 
@@ -25,7 +25,7 @@ We are interested in creating a map of world countries and cities (and at the sa
 
 Begin to familiarize yourself with the interface. You can also refer to this [brief description](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/QGIS_InterfaceDescription.md) of the elements of the interface for more information. 
 
-####Adding Layers
+#### Adding Layers
 
 In order to construct our map within QGIS we will need to add our data layers to the map project. There are several ways to accomplish this however we will begin by using the `Add Vector Layer` button. 
 
